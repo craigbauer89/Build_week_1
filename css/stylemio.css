@@ -19,10 +19,10 @@ body{
     font-family: myfont;
 }
 
-
 h2 {
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 5em;
+ 
     width: 80%;
     font-size: 2em;
     text-align: center;
@@ -43,12 +43,11 @@ h3 {
 
 p {
     margin: 0 auto;
-    margin-top: 1rem;
     width: 80%;
     text-align: center;
-    color: black;
+    color: grey;
     overflow: hidden;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 
 hr{
@@ -56,7 +55,7 @@ hr{
     margin: 0 auto;
     margin-top: 3em;
     margin-bottom: 2em;
-    color: white;
+    color: grey;
 }
 
 
@@ -101,6 +100,14 @@ hr{
 /*   transition-property: width, background-color ;
   transition-duration:2s, 2s ; */
 
+}
+
+.box2 .square {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg) scale(1.1) ;
+    background-color: red;
+    vertical-align: middle;
 }
 
 .box3 {
