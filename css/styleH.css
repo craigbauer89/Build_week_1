@@ -1,0 +1,117 @@
+  /* general css */
+  @font-face {
+    font-family: myfont;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+
+}
+body {
+     font-family: myfont;
+     font-size: 14px;
+     font-weight: 400;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     margin: 0px;
+     font-family: myfont;
+ }
+
+ h1 {
+     font-size: 36px;
+ }
+
+ h2 {
+     font-size: 24px;
+     font-weight: 500;
+ }
+
+ h3 {
+     font-size: 20px;
+     font-weight: 600;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+ }
+
+ p {
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 20px;
+     margin: 0px;
+     font-family: myfont;
+ }
+
+ ul {
+     padding: 0;
+     margin: 0;
+     list-style: none;
+ }
+
+ a,
+ a:active,
+ a:focus,
+ a:active {
+     text-decoration: none !important;
+     font-size: 15px;
+ }
+
+
+ /* ---------------- */
+
+#slider {
+    padding: 50px 0px;
+    position: relative;
+    
+}
+
+#slider .block {
+    padding: 0px 40px;
+}
+
+#slider .title {
+    padding: 0px;
+}
+
+#slider .carousel {
+    padding-right: 30px;
+        border-radius: 2px;
+        padding-bottom: 50px;
+    }
+        .title span {
+            color: #FF5333;
+        }
+
+.img {
+    display: flex;
+    max-width:100%;
+    max-height: 100%;
+    margin: auto;
+    
+    
+   
+     
+}
+#slider .block .carousel_container .owl-buttons {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    font-size: 40px;
+    color: #AA9D84;
+}
+
+.carousel {
+    display: flex;
+}
+
+.title {
+    display: flex;
+}
