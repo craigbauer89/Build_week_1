@@ -56,7 +56,7 @@
       list-style: none;
   }
 
-  a,
+  a
   a:active,
   a:focus,
   a:active {
@@ -117,8 +117,11 @@
   .title {
       display: flex;
   }
+  .carousel div {
+      margin: 3px;
+  }
 
-  
+
 div {
     /* border: 1px solid black; */
 }
