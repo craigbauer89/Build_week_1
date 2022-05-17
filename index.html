@@ -17,20 +17,17 @@
   <body>
     <header>
       <div id="background_banner">
-        <img src="images/header.jpg" alt="banner" width="100%" height="100%"/>
-
+        <img src="images/header.jpg" alt="banner" />
       </div>
       <div id="nav_container">
-        <p>Restaurant's</p>
+        <img src="images/logo.png" alt="Logo" />
         <nav>
-          <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Blog</li>
-            <li>Menu</li>
-            <li>News</li>
-            <li>Contacts</li>
-          </ul>
+          <a class="nav_link" href="#home">Home</a>
+          <a class="nav_link" href="#about_us">About us</a>
+          <a class="nav_link" href="#blog">Blog</a>
+          <a class="nav_link" href="#menu">Menu</a>
+          <a class="nav_link" href="#news">News</a>
+          <a class="nav_link" href="#contacts">Contacts</a>
         </nav>
       </div>
     </header>
@@ -43,58 +40,54 @@
     
 
 
-<div class="nxt">
-    <h3>Featured <span>Works</span><a class="fa-solid fa-angle-right" class="succ"></a></h3>
-</div>
 
-
-<div class="carosello" id="slider">
+    <div class="slides_container">
+      <h3>FEATURED <span>WORK</span><a class="next" onclick="plusSlides(1)">&#10095;</a></h3>
     
-    <div class="slide1">
-        <img src="images/slider/slider-img-1.jpg" >
-    </div>
-    <div class="slide1">
-        <img src="images/slider/slider-img-2.jpg"  >
-    </div>
-    <div class="slide1">
-        <img src="images/slider/slider-img-3.jpg" >
-    </div>
-    <div class="slide1">
-        <img src="images/slider/slider-img-4.jpg" >
-    </div>
-   
-    <div class="slide2">
-        <img src="images/slider/slider-img-1.jpg" >
-    </div>
-    <div class="slide2">
-        <img src="images/slider/slider-img-3.jpg">
-    </div>
-    <div class="slide2">
-        <img src="images/slider/slider-img-2.jpg" >
-    </div>
-    <div class="slide2">
-        <img src="images/slider/slider-img-4.jpg" >
-    </div>
-   
-  </div>    
+      
+      <div class="mySlides fade">
+        <!-- "slideM" -->
     
-</div>
-   
-
-
-
-
-
+        <div class="imgslide" class="numbertext"></div>
+        <img class="imgslide" src="images/slider/slider-img-1.jpg">
+        <img class="imgslide" src="images/slider/slider-img-3.jpg">
+        <img class="imgslide" src="images/slider/slider-img-2.jpg">
+        <img class="imgslide" src="images/slider/slider-img-4.jpg">
     
-   
-
-    <div class="button-container">
-        <a href="images/photo/photo-1.jpg" class="slider-change"> </a>
-        <a href="images/photo/photo-2.jpg" class="slider-change"> </a>
-        <a href="images/photo/photo-3.jpg" class="slider-change"> </a>
-        <a href="images/photo/photo-4.jpg" class="slider-change"> </a>
-        <a href="images/photo/photo-1.jpg" class="slider-change"> </a>
+      </div>
+    
+      <div class="mySlides fade">
+    
+        <div class="numbertext"></div>
+        <img class="imgslide" src="images/slider/slider-img-3.jpg">
+        <img class="imgslide" src="images/slider/slider-img-1.jpg">
+        <img class="imgslide" src="images/slider/slider-img-2.jpg">
+        <img class="imgslide" src="images/slider/slider-img-4.jpg">
+    
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img class="imgslide" src="images/slider/slider-img-1.jpg">
+        <img class="imgslide" src="images/slider/slider-img-4.jpg">
+        <img class="imgslide" src="images/slider/slider-img-3.jpg">
+        <img class="imgslide" src="images/slider/slider-img-2.jpg">
+    
+      </div>
+    
+      <!-- Next  -->
+      
+    
     </div>
+    
+    
+    <!-- The dot -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
     <!-- slider close -->
     </section>
         <h2>Latest <span>From</span> the <span>Blog</span></h2>
@@ -158,23 +151,23 @@
         <button type="button" id="menu_button">MORE INFO</button>
 
 
-    <section id="about_us">
-      <div>
-        <img src="" alt="" />
-        <h3>
-          Your <span>restaurant’s</span> website has to look <span>good</span>
-        </h3>
-        <hr />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat
-        </p>
-      </div>
-    </section>
+        <section id="about_us">
+          <div class="container">
+            <img src="images/cooker-img.png" alt="Chef" />
+            <h2>
+              Your <span>restaurant’s</span> website has to look <span>good</span>
+            </h2>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat
+            </p>
+          </div>
+        </section>
 
     <div class="menu">
         <div>
