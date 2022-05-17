@@ -253,20 +253,25 @@ span {
     
 }
 
-.newsletter {
-    padding-top: 5%;
-    height: 300px;
-    color: white;
-    margin: none;
-    background-image: url(../images/subscribe-bg.jpg);
-}
-
-
-
 
 /* MENU */
 
 /* NEWS */
+
+.newsletter {
+    background: url(../images/subscribe-bg.jpg) no-repeat fixed 10%;
+    background-size: cover;
+}
+
+.newsletter_inner {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: white;
+}
+
+.newsletter_margin{
+    margin: 10% 0;
+}
 
 .newsletter  p {
   
