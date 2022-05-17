@@ -122,9 +122,7 @@
   }
 
 
-div {
-    /* border: 1px solid black; */
-}
+
 
 .menu {
     position: relative;
@@ -160,12 +158,20 @@ div {
  
 }
 
+.menu button:hover {
+    color: white;
+    background-color: orange;
+    
 
-span {
+ 
+}
+
+
+.menu span {
     color: orange;
 }
 
-p {
+.menu p {
     color: grey;
 }
 
@@ -180,7 +186,7 @@ p {
 
 #item_price div:nth-child(2) {
     border-bottom: 1px dotted rgb(96, 89, 50);
-    width: 80%;
+    width: 70%;
     text-align: right;
 
 }
@@ -222,7 +228,7 @@ p {
 
     width: 60%;
     margin: 0 20%;
-    height: 50px;
+    height: 75px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -240,10 +246,19 @@ p {
     height: 100%;
     border: none;
     box-shadow: none;
+	padding: 0;
 }
+
+
+
 
 .subscribe button {
    background-color: rgb(159, 195, 183);
    color: white;
+   
 }
+
+.subscribe button:hover {
+    background-color: rgb(135, 162, 153);
+ }
 
