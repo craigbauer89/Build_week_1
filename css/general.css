@@ -21,6 +21,7 @@ h6 {
     margin: 0px;
     font-family: myfont;
     text-align: center;
+    line-height: 1.1;
 }
 
 h1 {
@@ -171,7 +172,42 @@ span {
 
 
 /* ABOUT US */
+#background_banner img{ 
+    width: 100%;
+}
+#background_banner{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+    opacity: 0.3;
+}
 
+
+#about_us{
+    background-color: #f6f6f6;
+    padding: 4.375rem 0;
+}
+#about_us h2{
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 2.5rem auto;
+    width: 80%;
+}
+#about_us span{
+    font-weight: 700;
+}
+#about_us img{
+    display: block;
+    margin: 0 auto;
+}
+#about_us hr{
+    width: 11em;
+    margin-bottom: 2.5rem;
+}
+#about_us p{
+    color: #959595;
+    text-align: center;
+    line-height: 1.8em;
+}
 /* ABOUT US */
 
 /* BLOG */
