@@ -78,7 +78,7 @@ span {
     left: 0;
     bottom: 0;
     right: 0;
-    background: url(../img/overlay-pattern.png), #000000;
+    background: url(../images/overlay-pattern.png), #000000;
     opacity: 0.3;
 }
 #nav_container{
