@@ -176,6 +176,18 @@ span {
 
 /* BLOG */
 
+#blog_background {
+background-image: url(../images/blog/blog-bg.jpg);
+}
+
+hr{
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    color: white;
+}
+
 #piatti {
     background-color: orangered;
     margin: 0 auto;
