@@ -499,3 +499,77 @@ button:hover {
 }
 
 
+.footer, footer {
+    text-transform: uppercase;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer, footer {
+    display: block;
+}
+
+.block {
+    width: 100%;
+}
+
+.box_contact, .blog_box, .box_media {
+    float: left;
+    position: relative;
+    width: 20%;
+}
+
+
+form, .form_group, #input_name, #input_email, #input_message {
+    margin-bottom: 0.95rem;
+}
+
+.block_form h2 {
+   padding: 2.5rem;
+}
+
+.block_form h3 {
+    padding: 1.25rem;
+ }
+
+.block_form span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+#input_name, #input_email, #input_message {
+    width: 100%;
+    padding: 0.375rem;
+    display: block;
+
+}
+
+#button_contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#button_contact {
+    background: #FF4F02;
+    margin-top: 0.95rem;
+    padding: 0.95rem 5rem 0.95rem 5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+
+    
+}
+
+

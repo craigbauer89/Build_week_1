@@ -27,3 +27,7 @@ function showSlides(n) {
      slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+ function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
