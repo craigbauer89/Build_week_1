@@ -188,7 +188,7 @@ span {
 /* BLOG */
 
 #blog_background {
-background-image: url('../images/blog/blog-bg.jpg');
+background-image: url(../images/blog/blog-bg.jpg);    
 }
 
 hr{
@@ -212,7 +212,7 @@ hr{
 }
 
 .blogbox1 {
- background-image: url('../images/blog/blog-img-1.jpg');
+ background-image: url(../images/blog/blog-img-1.jpg);
  background-position:center;
  background-size:cover;
  background-repeat: no-repeat;
@@ -251,7 +251,7 @@ hr{
 } */
 
 .blogbox3 {
-    background-image: url('../images/blog/blog-img-2.jpg');
+    background-image: url(../images/blog/blog-img-2.jpg);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -272,7 +272,7 @@ hr{
 
    
 .blogbox4 {
-    background-image: url('../images/blog/blog-img-3.jpg');
+    background-image: url(../images/blog/blog-img-3.jpg);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -293,7 +293,7 @@ hr{
 
    
 .blogbox5 {
-    background-image: url('../images/blog/blog-img-4.jpg');
+    background-image: url(../images/blog/blog-img-4.jpg);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -314,7 +314,7 @@ hr{
 
    
 .blogbox6 {
-    background-image: url('../images/blog/blog-img-5.jpg');
+    background-image: url(../images/blog/blog-img-5.jpg);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -335,7 +335,7 @@ hr{
 
    
 .blogbox7 {
-    background-image: url('../images/blog/blog-img-6.jpg');
+    background-image: url(../images/blog/blog-img-6.jpg);
     background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
