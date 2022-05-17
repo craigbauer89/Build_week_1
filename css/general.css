@@ -358,7 +358,7 @@ hr{
        overflow: hidden;
    } 
 
-.blogbutton{
+#menu_button{
     background-color: orangered;
     text-align: right;
     margin: 0 auto;
@@ -368,7 +368,7 @@ hr{
     color: white;
     border:none;
 }
-.blogbutton:hover {
+#menu_button:hover {
         background-color:transparent;
         border: orangered 1px solid;
         color: orangered;
@@ -432,15 +432,15 @@ hr{
     background-color: white;
     border: 1px solid #FF5333;
     font-variant: small-caps;
-    color: #FF5333;
+    color: black;
     font-size: 1rem;
 
  
 }
 
 .menu button:hover {
-    color: white;
     background-color: #FF5333;
+    color: white;
  
 }
 .menu p {
