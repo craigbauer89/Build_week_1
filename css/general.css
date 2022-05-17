@@ -27,17 +27,29 @@ h6 {
 
 }
 
+<<<<<<< HEAD
+h1 {
+=======
 
 
 h2 {
+>>>>>>> a54dbc11a3dfd436bca164b50154d76678bead69
     font-size: 2.25em;
     font-weight: 500;
 }
 
-h3 {
+h2 {
     font-size: 1.5em;
+<<<<<<< HEAD
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.25em;
+=======
+>>>>>>> a54dbc11a3dfd436bca164b50154d76678bead69
     font-weight: 600;
-} */
+}
 
 p {
     font-size: 0.9em;
@@ -187,6 +199,8 @@ span {
 
 /* BLOG */
 
+<<<<<<< HEAD
+=======
 #blog_background {
 background-image: url(/images/blog/blog-bg.jpg);    
 }
@@ -387,6 +401,7 @@ button{
 
 
 
+>>>>>>> a54dbc11a3dfd436bca164b50154d76678bead69
 /* BLOG */
 
 /* MENU */
@@ -394,18 +409,30 @@ button{
 
 .menu {
     position: relative;
-    margin: 1% 7.5%;
+    margin: 7.5%;
 }
+
+
 
 .menu > div:nth-child(-n+3) {
     text-align: center;
-    margin: 0 10%;
+    margin: 0 18%;
 
 }
 
 .menu > div:nth-child(2) {
     margin: 2.5% 45%;
-    border-top: 1px solid grey;
+    border-top: 1px solid lightgrey;
+    box-shadow: 1px 1px 1px lightgrey;
+}
+
+.menu > div:nth-child(3)  {
+    margin-top: 10% 40%;
+}
+
+.menu > div:nth-child(4) h2 {
+    margin-top: 10%;
+    text-align: left;
 }
 
 
@@ -422,6 +449,7 @@ button{
     height: 100%;
     background-color: white;
     border: 1px solid #FF5333;
+    font-variant: small-caps;
 
  
 }
@@ -429,13 +457,8 @@ button{
 .menu button:hover {
     color: white;
     background-color: orange;
-    
-
  
 }
-
-
-
 .menu p {
     color: grey;
 }
@@ -451,16 +474,41 @@ button{
 
 .item_price div:nth-child(2) {
     border-bottom: 1px dotted rgb(96, 89, 50);
-    width: 70%;
+    /* width: 88%; */
     text-align: right;
-
 }
 
-.item_price sub {
 
+.item_price .pancakes {
+    /* border-bottom: 1px dotted rgb(96, 89, 50); */
+    width: 88%;
+    /* text-align: right; */
+}
+
+.item_price .pot_pie {
+    width: 81.2%;
+}
+
+.item_price .cereal {
+    width: 81%;
+}
+
+.item_price .skewers {
+    width: 87.8%;
+}
+
+.item_price .steak {
+    width: 71.8%;
+}
+
+.item_price .salad {
+    width: 90%;
+}
+
+
+.item_price sub {
     color: rgb(96, 89, 50);
     font-weight: bolder;
-    
     
 }
 
@@ -469,8 +517,12 @@ button{
 
 /* NEWS */
 
+.newsletter_margin{
+    margin: 10% 0;
+}
+
 .newsletter {
-    background: url(../images/subscribe-bg.jpg) no-repeat fixed 10%;
+    background: url(../images/subscribe-bg.jpg) no-repeat fixed 0;
     background-size: cover;
 }
 
@@ -480,9 +532,11 @@ button{
     color: white;
 }
 
-.newsletter_margin{
-    margin: 10% 0;
+.newsletter_inner h2 {
+    margin: 1%;
 }
+
+
 
 .newsletter  p {
   
@@ -496,7 +550,7 @@ button{
 
 }
 
-.newsletter > div:nth-child(2) {
+.newsletter_inner > div:nth-child(2) {
     margin: 2.5% 45%;
     border-top: 1px solid white;
 
@@ -504,9 +558,10 @@ button{
 
 .subscribe {
 
-    width: 60%;
-    margin: 0 20%;
-    height: 75px;
+    margin-top: 5%;
+    width: 40%;
+    margin: 0 30%;
+    height: 50px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -530,6 +585,7 @@ button{
 .subscribe button {
    background-color: rgb(159, 195, 183);
    color: white;
+   font-variant: small-caps;
    
 }
 
