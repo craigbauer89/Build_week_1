@@ -62,7 +62,83 @@ span {
 
 
 /* header */
-
+#background_banner img{ 
+    display: block;
+    width: 100%;
+}
+#background_banner{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+#background_banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../img/overlay-pattern.png), #000000;
+    opacity: 0.3;
+}
+#nav_container{
+    padding: 2.8em 2.8em 1em 2.8em;
+    width: 90%;
+    margin: -5.2rem auto 0;
+    background-color: #ffffffe6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+#nav_container img{
+    position: relative;
+    bottom: 0.5em;
+}
+#nav_container nav{
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+.nav_link{
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 1em;
+    color: #000;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+.nav_link:hover{
+    text-decoration: none;
+}
+.nav_link:active{
+    text-decoration: none;
+}
+.nav_link:after{
+    content: ""; 
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FF5333;
+    opacity: 0; 
+    position: absolute; 
+    margin-top: 0.5em;
+    transition: opacity .1s linear;
+}
+.nav_link:hover:after {
+    display: block;
+    opacity: 1;
+}
+.nav_link:active:after {
+    display: block;
+    opacity: 1;
+}
 /* header */
 
 /* HOME */
@@ -185,16 +261,6 @@ span {
 
 
 /* ABOUT US */
-#background_banner img{ 
-    width: 100%;
-}
-#background_banner{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.356);
-    opacity: 0.3;
-}
-
-
 #about_us{
     background-color: #f6f6f6;
     padding: 4.375rem 0;
@@ -215,6 +281,9 @@ span {
 #about_us hr{
     width: 11em;
     margin-bottom: 2.5rem;
+    border: 0;
+    height: 1px;
+    background-color: #c8c1b3;
 }
 #about_us p{
     color: #959595;
