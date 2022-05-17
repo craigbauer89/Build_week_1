@@ -202,7 +202,7 @@ span {
 <<<<<<< HEAD
 =======
 #blog_background {
-background-image: url(/images/blog/blog-bg.jpg);    
+background-image: url(images/blog/blog-bg.jpg);    
 }
 
 hr{
@@ -368,7 +368,7 @@ hr{
        overflow: hidden;
    } 
 
-button{
+.button{
     background-color: orangered;
     text-align: right;
     margin: 0 auto;
