@@ -65,7 +65,7 @@
   }
 
 
-  /* ---------------- */
+ /*  HOME OPEN */
 
 
 .carosello, .slide1, .slide2 {
@@ -168,16 +168,18 @@ position: relative;
     transition: left 2s;
 }
 
-  
+/*  HOME CLOSE */  
 
- /*  HOME CLOSE */
+ 
 
 
-div {
-    /* border: 1px solid black; */
-}
 
-.menu {
+ /* MENU */
+
+
+
+
+ .menu {
     position: relative;
     margin: 1% 7.5%;
 }
@@ -211,12 +213,21 @@ div {
  
 }
 
+.menu button:hover {
+    color: white;
+    background-color: orange;
+    
 
-span {
-    color: #FF5333;
+ 
 }
 
-p {
+
+.menu span {
+    color: orange;
+
+}
+
+.menu p {
     color: grey;
 }
 
@@ -231,7 +242,7 @@ p {
 
 #item_price div:nth-child(2) {
     border-bottom: 1px dotted rgb(96, 89, 50);
-    width: 80%;
+    width: 70%;
     text-align: right;
 
 }
@@ -267,13 +278,16 @@ p {
 .newsletter > div:nth-child(2) {
     margin: 2.5% 45%;
     border-top: 1px solid white;
+
 }
+
+ /* SUBSCRIBE */
 
 .subscribe {
 
     width: 60%;
     margin: 0 20%;
-    height: 50px;
+    height: 75px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -291,12 +305,14 @@ p {
     height: 100%;
     border: none;
     box-shadow: none;
+	padding: 0;
+
 }
 
-.subscribe button {
-   background-color: rgb(159, 195, 183);
-   color: white;
-}
+.subscribe button:hover {
+    background-color: rgb(135, 162, 153);
+ }
+
 
 
 /* BLOG */
@@ -555,4 +571,5 @@ form, .form_group, #input_name, #input_email, #input_message {
 
     
 }
+
 
