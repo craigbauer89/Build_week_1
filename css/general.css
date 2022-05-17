@@ -188,7 +188,7 @@ span {
 /* BLOG */
 
 #blog_background {
-background-image: url(../images/blog/blog-bg.jpg);    
+background-image: url(/images/blog/blog-bg.jpg);    
 }
 
 hr{
