@@ -180,7 +180,7 @@ span {
     background-color: orangered;
     margin: 0 auto;
     width: 80%;
-    height: fit-content;
+    height: 45em;
     display: grid;
     grid-template-columns: repeat(4, 25%); 
     grid-template-rows: repeat(6, 15em);
