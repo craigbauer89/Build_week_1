@@ -63,119 +63,135 @@ span {
 /* header */
 
 /* HOME */
-#slider {
-    width: 100%;
+
+* {
+    box-sizing: border-box
 }
 
-
-
-.carosello {
-    display: flex;
-    position: absolute;
-    max-width: 60%;
+/* Slide container */
+.slides_container {
+    max-width: 70%;
     position: relative;
-    margin: 0 auto;
-
-    padding: 1rem;
-
-}
-.nxt h3 {
-    text-align:left;
+    margin: auto;
+    
 }
 
-.carosello img {
-    width: 100%;
 
-}
-
-.button-container {
-    position: relative;
-    margin: 0 auto;
+.mySlides {
+    display: none;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
     text-align: center;
 }
 
-
-
-.succ {
-    cursor: pointer;
-    user-select: none;
-    position: absolute;
-    top: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: #FF5333;
-    color: #FF5333;
-    font-size: 18px;
-    transition: 0.5s ease;
-    border-radius: 50%;
+.imgslides {
     text-align: center;
-    line-height: 38px;
+    margin-top: 1rem;
+    text-align: center;
     margin-left: 1px;
+    margin-right: 1px;
 
 }
 
-
-
-
-.nxt a:hover {
-   
-    color: #FF5333;
-    transform: scale(1.2);
+.mySlides h3 {
+    margin-right: 13rem;
+    ;
 }
 
-.nxt a {
-    color: #FF5333;
+/* Next buttons */
+
+.next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
     float: right;
-    
+    color: #AA9D84;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    box-sizing: border-box;
 }
 
-.button-container {
 
-    position: relative;
+span {
+    color: #FF4F02;
+
 
 }
 
 
-.slider-change {
-    display: inline-block;
-    width: 5px;
+a.next {
+
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+
+}
+
+
+
+.next:hover {
+    color: #ff4f02;
+    transform: scale(1.1);
+    display: block;
+}
+
+
+
+
+/* Number text  */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+}
+
+.imgslide {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20%;
+
+
+}
+
+/* The dots*/
+.dot {
+    cursor: pointer;
     height: 5px;
-    margin-left: 2px;
-
-
-    border-radius: 5px;
-    background: #DADADA;
+    width: 5px;
+    margin: 0 auto;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-
-
-.slide1 {
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    
-    overflow: hidden;
-    max-width: 250%;
-    margin-left: 3px;
-    margin-right: 3px;
-    
+.active,
+.dot:hover {
+    background-color: #FF4F02;
 }
 
-.slide2 {
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 
+@keyframes fade {
+    from {
+        opacity: .4
+    }
 
-
-    
-    
-    max-width: 250%;
-    margin-left: 3px;
-    margin-right: 3px;
-
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-    transition: left 2s;
+    to {
+        opacity: 1
+    }
 }
 
 /* HOME */
