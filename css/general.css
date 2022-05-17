@@ -192,7 +192,7 @@ span {
 
 
 #blog_background {
-background-image: url(/images/blog/blog-bg.jpg);    
+background-image: url(images/blog/blog-bg.jpg);    
 }
 
 hr{
@@ -358,7 +358,7 @@ hr{
        overflow: hidden;
    } 
 
-#menu_button{
+.blogbutton{
     background-color: orangered;
     text-align: right;
     margin: 0 auto;
@@ -368,7 +368,7 @@ hr{
     color: white;
     border:none;
 }
-#menu_button:hover {
+.blogbutton:hover {
         background-color:transparent;
         border: orangered 1px solid;
         color: orangered;
