@@ -1,0 +1,191 @@
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+}
+/* BODY */
+body {
+    font-family: myfont;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0 auto;
+    
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    font-family: myfont;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.25em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0px;
+    font-family: myfont;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+span {
+    color: #FF5333;
+}
+
+/* BODY */
+
+
+/* header */
+
+/* header */
+
+/* HOME */
+.carosello,
+.slide1,
+.slide2 {
+
+    margin: 1px;
+
+    width: 100%;
+}
+
+.carosello {
+    display: flex;
+    position: absolute;
+    max-width: 80%;
+    position: relative;
+    margin: 0 auto;
+
+    padding: 1rem;
+
+}
+
+.carosello img {
+    width: 100%;
+
+}
+
+.button-container {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.succ {
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #FF5333;
+    color: #FF5333;
+    font-size: 18px;
+    transition: 0.5s ease;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    margin-left: 1px;
+
+}
+
+
+
+
+.succ:hover {
+    background-color: #DDDDDD;
+    color: #FF5333;
+}
+
+.nxt a {
+    color: #FF5333;
+    float: right;
+}
+
+.button-container {
+
+    position: relative;
+
+}
+
+
+.slider-change {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-left: 2px;
+
+
+    border-radius: 5px;
+    background: #DADADA;
+}
+
+
+
+.slide1 {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slide2 {
+
+
+
+    clear: both;
+    position: relative;
+
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+/* HOME */
+
+
+/* ABOUT US */
+
+/* ABOUT US */
+
+/* BLOG */
+
+/* BLOG */
+
+/* MENU */
+
+/* MENU */
+
+/* NEWS */
+
+/* NEWS */
+
+/* CONTACT US */
+
+/* CONTACT US */

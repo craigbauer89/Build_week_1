@@ -65,7 +65,7 @@
   }
 
 
-  /* ---------------- */
+ /*  HOME OPEN */
 
 
 .carosello, .slide1, .slide2 {
@@ -168,9 +168,9 @@ position: relative;
     transition: left 2s;
 }
 
-  
+/*  HOME CLOSE */  
 
- /*  HOME CLOSE */
+ 
 
 
 div {
