@@ -361,7 +361,7 @@ hr{
        overflow: hidden;
    } 
 
-button{
+#menu_button{
     background-color: orangered;
     text-align: right;
     margin: 0 auto;
@@ -371,7 +371,7 @@ button{
     color: white;
     border:none;
 }
-    button:hover {
+#menu_button:hover {
         background-color:transparent;
         border: orangered 1px solid;
         color: orangered;
@@ -444,13 +444,15 @@ button{
     background-color: white;
     border: 1px solid #FF5333;
     font-variant: small-caps;
+    color: #FF5333;
+    font-size: 1rem;
 
  
 }
 
 .menu button:hover {
     color: white;
-    background-color: orange;
+    background-color: #FF5333;
  
 }
 .menu p {
@@ -580,6 +582,7 @@ button{
    background-color: rgb(159, 195, 183);
    color: white;
    font-variant: small-caps;
+   font-size: 1rem;
    
 }
 
