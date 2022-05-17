@@ -67,95 +67,107 @@
 
   /* ---------------- */
 
-  #slider {
-      padding: 50px 0px;
-      position: relative;
 
-  }
+.carosello, .slide1, .slide2 {
+    
+    margin: 1px;
+    
+    width: 100%;
+}
 
-  #slider .block {
-      padding: 0px 40px;
-  }
-
-  #slider .title {
-      padding: 0px;
-  }
-
-  #slider .carousel {
-      padding-right: 30px;
-      border-radius: 2px;
-      padding-bottom: 50px;
-  }
-
-  .title span {
-      color: #FF5333;
-  }
-
-  .img {
-      display: flex;
-      max-width: 100%;
-      max-height: 100%;
-      margin: auto;
-
-
-
-
-  }
-
-  #slider .block .carousel_container .owl-buttons {
-      position: absolute;
-      right: 0;
-      top: -40px;
-      font-size: 40px;
-      color: #AA9D84;
-  }
-
-  .carousel {
-      display: flex;
-  }
-
-  .title {
-      display: flex;
-      position: relative;
-  }
-  .title i {
-      margin-left: 15rem;
-      margin-top: 1rem;
-  }
-  .carousel div {
-      margin: 3px;
-  }
-  
-  i {
-    color: #FF5333;
-  }
-
-  form input {
-    background: #DADADA;
-        border-radius: 100%;
+.carosello {
+    display:flex;
+    position: absolute;
+    max-width: 80%;
+    position: relative;
+    margin:  0 auto;
+    
+    padding: 1rem;
+    
+}
+.carosello img {
+    width:100%;          
         
-        height: 2px;
-        margin-right: 5px;
-        width: 10px;
-    }
-    .dot {
-        text-align: center;
-        text-decoration: none;
-        display: flex;
-        width: 100%;
-        height: 1%;
-       
-    }
+}
+.button-container {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
 
-    .nxt {
-            background: #DADADA;
-            border-radius: 100%;
-            display: inline-block;
-            height: 10px;
-            margin-right: 5px;
-            width: 10px;
-            cursor: pointer;
-    }
+
+
+.succ {
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #FF5333;
+    color: #FF5333;
+    font-size: 18px;
+    transition: 0.5s ease;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    margin-left: 1px;
+    
+}
+    
+        
+    
+        
+.succ:hover {
+    background-color: #DDDDDD;
+    color: #FF5333;
+}
+.nxt a {
+    color: #FF5333;
+    float: right;
+}
+        
+.button-container {
+           
+position: relative;
+            
+}
+        
+        
+.slider-change {
+    display: inline-block;
+    width:5px;
+    height: 5px;
+    margin-left: 2px;
+    
+    
+    border-radius: 5px;
+    background: #DADADA;
+}
+
+    
+
+.slide1 {
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+.slide2 {
+    
+    
+    
+    clear: both;
+    position: relative;
+
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
   
 
  /*  HOME CLOSE */
