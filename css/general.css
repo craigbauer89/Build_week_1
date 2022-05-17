@@ -4,36 +4,38 @@
 }
 /* BODY */
 body {
-    font-family: myfont;
+    font-family:myfont;
     font-size: 0.9em;
     font-weight: 400;
     margin: 0 auto;
+    line-height: 1.4em;
     
 
 }
 
-h1,
+
 h2,
 h3,
 h4,
 h5,
 h6 {
+    line-height: 1.1em;
     margin: 0px;
     font-family: myfont;
     text-align: center;
+    font-size: 2.25em;
+
 }
+
+
 
 h2 {
     font-size: 2.25em;
+    font-weight: 500;
 }
 
 h3 {
     font-size: 1.5em;
-    font-weight: 500;
-}
-
-/* h3 {
-    font-size: 1.25em;
     font-weight: 600;
 } */
 
@@ -61,24 +63,24 @@ span {
 /* header */
 
 /* HOME */
-.carosello,
-.slide1,
-.slide2 {
-
-    margin: 1px;
-
+#slider {
     width: 100%;
 }
+
+
 
 .carosello {
     display: flex;
     position: absolute;
-    max-width: 80%;
+    max-width: 60%;
     position: relative;
     margin: 0 auto;
 
     padding: 1rem;
 
+}
+.nxt h3 {
+    text-align:left;
 }
 
 .carosello img {
@@ -115,14 +117,16 @@ span {
 
 
 
-.succ:hover {
-    background-color: #DDDDDD;
+.nxt a:hover {
+   
     color: #FF5333;
+    transform: scale(1.2);
 }
 
 .nxt a {
     color: #FF5333;
     float: right;
+    
 }
 
 .button-container {
@@ -150,16 +154,23 @@ span {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
-    text-align: center;
+    
     overflow: hidden;
+    max-width: 250%;
+    margin-left: 3px;
+    margin-right: 3px;
+    
 }
 
 .slide2 {
 
 
 
-    clear: both;
-    position: relative;
+    
+    
+    max-width: 250%;
+    margin-left: 3px;
+    margin-right: 3px;
 
     -webkit-transition: left 2s;
     -moz-transition: left 2s;
