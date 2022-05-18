@@ -354,29 +354,53 @@ a.next {
 
 @media screen and (min-width: 1024px) {
     
-    
-    #piatti {width: 90%;
+#blog_cont_background #piatti {
+       width: 95%;
+       display: grid;
 }
+}
+
+@media screen and (max-width: 768px) {
+    #blog_cont_background #piatti {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2, 100%); 
+        grid-template-rows: repeat(4, 33%);
+ }
+          
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+}
+
 
 
 
 #blog_background {
-background-image: url(../images/blog/blog-bg.jpg);    
+background: url(../images/blog/blog-bg.jpg) no-repeat fixed 0;    
 display:block;
-
+background-size: cover;
+padding-top: 3em;
 }
 
-  #blog_cont_background::after{
+/* #blog_background::before{
     content: "";
-    position: relative;
+    position:absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: url(../images/overlay-pattern.png), #000000;
+    background: url(../images/overlay-pattern.png), #000000 no-repeat fixed 0;
     opacity: 0.3;
-}  
+}   */
 
+#blog_background span {   
+     font-weight: bold;
+}
 
 .blogpar p {
     color: grey;
@@ -639,7 +663,7 @@ hr{
 
 
 
-div .blogbutton{
+ div .blogbutton{
         background-color: orangered;
         color: white;
         border:none;
@@ -655,7 +679,7 @@ div .blogbutton{
         color: orangered;
         border-radius: 5%;
         animation-delay: 1200ms;
-    }
+    } 
 
 /* BLOG */
 
