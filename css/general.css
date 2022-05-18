@@ -352,6 +352,14 @@ a.next {
 
 /* BLOG */
 
+@media screen and (min-width: 1024px) {
+    
+    
+    #piatti {width: 90%;
+}
+
+
+
 #blog_background {
 background-image: url(../images/blog/blog-bg.jpg);    
 display:block;
@@ -415,6 +423,7 @@ hr{
     padding: 1.6em;
     z-index: 2;
     vertical-align: middle;
+    
 }
 
 .blogbox1 img {
