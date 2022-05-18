@@ -71,11 +71,25 @@ span {
     box-sizing: border-box
 }
 
+.title1 {
+    margin-left: 2.7rem;
+    display: flex;
+    margin-right:5rem;
+    justify-content: space-between;
+    position: relative;
+    
+    
+}
+
+
 /* Slide container */
 .slides_container {
-    max-width: 70%;
+    max-width: 100%;
     position: relative;
     margin: auto;
+    display: block;
+    font-size: 1.5rem;
+    
     
 }
 
@@ -84,38 +98,33 @@ span {
     display: none;
     margin-top: 2px;
     margin-bottom: 4px;
-    margin-left: 4px;
-    margin-right: 4px;
+    
     text-align: center;
+    
 }
 
-.imgslides {
-    text-align: center;
-    margin-top: 1rem;
-    text-align: center;
-    margin-left: 1px;
-    margin-right: 1px;
 
-}
+    
 
-.mySlides h3 {
-    margin-right: 13rem;
+
+/* .mySlides h3 {
+    
     ;
-}
+} */
 
 /* Next buttons */
 
 .next {
+   
     cursor: pointer;
-    top: 50%;
     width: auto;
-    float: right;
+     float: right; 
     color: #AA9D84;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.5rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    user-select: none;
+    
     box-sizing: border-box;
 }
 
@@ -157,9 +166,15 @@ a.next {
 }
 
 .imgslide {
-    margin-left: 10px;
-    margin-right: 10px;
+    
     width: 20%;
+    margin-right: 3px;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+    
+    
+    
 
 
 }
@@ -174,6 +189,7 @@ a.next {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    
 }
 
 .active,
@@ -184,16 +200,19 @@ a.next {
 /* Fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 0.7s;
+   ;
 }
 
 @keyframes fade {
     from {
         opacity: .4
+        
     }
 
     to {
         opacity: 1
+        
     }
 }
 
@@ -471,6 +490,11 @@ hr{
 }
 
 @media screen and (max-width: 768px) {
+    /* carousel */
+    .imgslide {
+            margin-right: -8px;
+    
+        }
 }
 
 
@@ -535,6 +559,12 @@ hr{
         
     }
 
+    /* carusel */
+    .imgslide {
+        margin-right: 3px;
+        
+    }
+ 
 }
 
 @media screen and (min-width: 1024px) {
@@ -841,6 +871,13 @@ hr{
 /* NEWS */
 
 /* CONTACT US */
+
+
+/* .footer  {
+     display: flex; 
+     text-align: left; 
+} */
+ 
 
 /* CONTACT US */
 
