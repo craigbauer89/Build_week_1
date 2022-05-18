@@ -82,9 +82,9 @@ span {
     opacity: 0.3;
 }
 #nav_container{
-    padding: 2.8em 2.8em 1em 2.8em;
+    padding: 2.8em 2.8em 1.7em 2.8em;
     width: 90%;
-    margin: -5.2rem auto 0;
+    margin: -5.5rem auto 0;
     background-color: #ffffffe6;
     display: flex;
     justify-content: space-between;
@@ -147,11 +147,25 @@ span {
     box-sizing: border-box
 }
 
+.title1 {
+    margin-left: 2.7rem;
+    display: flex;
+    margin-right:5rem;
+    justify-content: space-between;
+    position: relative;
+    
+    
+}
+
+
 /* Slide container */
 .slides_container {
-    max-width: 70%;
+    max-width: 100%;
     position: relative;
     margin: auto;
+    display: block;
+    font-size: 1.5rem;
+    
     
 }
 
@@ -160,38 +174,33 @@ span {
     display: none;
     margin-top: 2px;
     margin-bottom: 4px;
-    margin-left: 4px;
-    margin-right: 4px;
+    
     text-align: center;
+    
 }
 
-.imgslides {
-    text-align: center;
-    margin-top: 1rem;
-    text-align: center;
-    margin-left: 1px;
-    margin-right: 1px;
 
-}
+    
 
-.mySlides h3 {
-    margin-right: 13rem;
+
+/* .mySlides h3 {
+    
     ;
-}
+} */
 
 /* Next buttons */
 
 .next {
+   
     cursor: pointer;
-    top: 50%;
     width: auto;
-    float: right;
+     float: right; 
     color: #AA9D84;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.5rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    user-select: none;
+    
     box-sizing: border-box;
 }
 
@@ -233,9 +242,15 @@ a.next {
 }
 
 .imgslide {
-    margin-left: 10px;
-    margin-right: 10px;
+    
     width: 20%;
+    margin-right: 3px;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+    
+    
+    
 
 
 }
@@ -250,6 +265,7 @@ a.next {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    
 }
 
 .active,
@@ -260,16 +276,19 @@ a.next {
 /* Fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 0.7s;
+   ;
 }
 
 @keyframes fade {
     from {
         opacity: .4
+        
     }
 
     to {
         opacity: 1
+        
     }
 }
 
@@ -585,6 +604,7 @@ div .blogbutton{
         padding:  2rem 3rem ;
         text-align: center;
 
+    
 }
 .blogbutton:hover {
         background-color:transparent;
@@ -600,23 +620,24 @@ div .blogbutton{
 
 
 .menu {
-    margin: 0 5%;
+    margin: 2.5%;
+    margin-top: 10%;
     position: relative;
-    margin-top: 15%;
 }
 
 
 
 .menu > div:nth-child(-n+3) {
     text-align: center;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 
 }
 
 .menu > div:nth-child(2) {
-    margin: 5% 30%;
+    margin: 0 35%;
     border-top: 1px solid lightgrey;
     box-shadow: 1px 1px 1px lightgrey;
+    
 }
 
 .menu > div:nth-child(3)  {
@@ -675,6 +696,11 @@ div .blogbutton{
 }
 
 @media screen and (max-width: 768px) {
+    /* carousel */
+    .imgslide {
+            margin-right: -8px;
+    
+        }
 }
 
 
@@ -721,13 +747,18 @@ div .blogbutton{
 
     
     .menu > div:nth-child(2) {
-        margin: 2.5% 45%;
+        margin: 2.5% 40%;
+        
+    }
+
+    .menu > div:nth-child(3) {
+        margin: 0 10%;
         
     }
 
     .menu > div:nth-child(-n+3) {
         text-align: center;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     
     }
 
@@ -739,6 +770,12 @@ div .blogbutton{
         
     }
 
+    /* carusel */
+    .imgslide {
+        margin-right: 3px;
+        
+    }
+ 
 }
 
 @media screen and (min-width: 1024px) {
@@ -786,7 +823,7 @@ div .blogbutton{
 
 
     .menu > div:nth-child(2) {
-        margin: 2.5% 45%;
+        margin: 0 45%;
         
     }
 
@@ -832,8 +869,8 @@ div .blogbutton{
 }
 
 .newsletter_inner {
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 15%;
+    padding-bottom: 15%;
     color: white;
     font-size: 1.5rem;
 }
@@ -841,7 +878,7 @@ div .blogbutton{
 
 
 .newsletter  p {
-    margin: 10%;
+    margin: 5%;
     color: white;
     
 }
@@ -853,14 +890,14 @@ div .blogbutton{
 }
 
 .newsletter_inner > div:nth-child(2) {
-    margin: 0 30% ;
+    margin: 0 40% ;
     border-top: 1px solid white;
 
 }
 
 .newsletter_inner h2 {
     line-height: 1;
-    margin: 10%;
+    margin: 7.5%;
 
 }
 
@@ -877,7 +914,7 @@ div .blogbutton{
 }
 
 .subscribe > div:nth-child(2)  {
-    width: 75%;
+    width: 40%;
     height: 45%;
 }
 
@@ -895,7 +932,7 @@ div .blogbutton{
 
 }
 .subscribe button {
-   background-color: rgb(137, 208, 183);
+   background-color: #7EC3BB;
    color: white;
    font-variant: small-caps;
    font-size: 1.3rem;
@@ -904,7 +941,7 @@ div .blogbutton{
 
 
 .subscribe button:hover {
-    background-color: rgb(132, 163, 152);
+    background-color: #6fb1a9;
  }
 
 
@@ -922,7 +959,7 @@ div .blogbutton{
 
     .newsletter_inner {
         padding-top: 15%;
-        padding-bottom: 15%;
+        padding-bottom: 2.5%;
         color: white;
     }
 
@@ -943,8 +980,8 @@ div .blogbutton{
 
     .subscribe {
 
-        width: 80%;
-        margin: 0 10%;
+        width: 70%;
+        margin: 0 15%;
         height: 150px;
         display: flex;
         flex-direction: row;
@@ -953,12 +990,12 @@ div .blogbutton{
     }
 
     .subscribe > div:nth-child(2)  {
-        width: 25%;
+        width: 30%;
        
     }
 
     .subscribe > div:nth-child(1)  {
-        width: 75%;
+        width: 70%;
       
     }
 
@@ -971,7 +1008,7 @@ div .blogbutton{
 
     }
     .subscribe button {
-    background-color: rgb(159, 195, 183);
+    background-color: #7EC3BB;
     color: white;
     font-variant: small-caps;
     font-size: 1rem;
@@ -980,7 +1017,7 @@ div .blogbutton{
 
 
     .subscribe button:hover {
-        background-color: rgb(135, 162, 153);
+        background-color: #6fb1a9;
     }
 
     .newsletter_inner > div:nth-child(2) {
@@ -1007,8 +1044,8 @@ div .blogbutton{
     }
 
     .newsletter_inner {
-        padding-top: 15%;
-        padding-bottom: 15%;
+        padding-top: 10%;
+        padding-bottom: 5%;
         color: white;
     }
     
@@ -1032,8 +1069,9 @@ div .blogbutton{
     .subscribe {
 
         margin-top: 5%;
-        width: 40%;
-        margin: 0 30%;
+        margin-bottom: 0;
+        width: 50%;
+        margin: 0 25%;
         height: 150px;
         display: flex;
         flex-direction: row;
@@ -1041,11 +1079,11 @@ div .blogbutton{
     }
 
     .subscribe > div:nth-child(2)  {
-        width: 25%;
+        width: 30%;
     }
 
     .subscribe > div:nth-child(1)  {
-        width: 75%;
+        width: 70%;
 
     }
 
@@ -1058,7 +1096,7 @@ div .blogbutton{
 
     }
     .subscribe button {
-    background-color: rgb(159, 195, 183);
+    background-color: #7EC3BB;
     color: white;
     font-variant: small-caps;
     font-size: 1rem;
@@ -1067,7 +1105,7 @@ div .blogbutton{
 
 
     .subscribe button:hover {
-        background-color: rgb(135, 162, 153);
+        background-color: #6fb1a9;
     }
 
     .newsletter_inner > div:nth-child(2) {
@@ -1085,7 +1123,13 @@ div .blogbutton{
 
 /* CONTACT US */
 
+
+/* .footer  {
+     display: flex; 
+     text-align: left; 
+} */
+ 
+
 /* CONTACT US */
 
 
-/* 
