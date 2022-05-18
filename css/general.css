@@ -86,9 +86,7 @@ span {
 input#menu-btn{
     display: none;
 }
-input#menu-btn:checked~nav{
-    height: 15em;
-}
+
 .lni-menu{
     color:#FF4F02;
     font-size: 1.5rem;
@@ -98,7 +96,7 @@ input#menu-btn:checked~nav{
     padding: 2.8em 2.8em 1.7em 2.8em;
     width: 90%;
     margin: -5.5rem auto 0;
-    background-color: #ffffffe6;
+    background-color: #ffffffc4;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -134,6 +132,7 @@ input#menu-btn:checked~nav{
 }
 .nav_link:active{
     text-decoration: none;
+    color: blue;
 }
 .nav_link:after{
     content: ""; 
@@ -966,11 +965,13 @@ div .blogbutton{
         height: 0;
         display: flex;
         flex-direction: column;
-        margin-top: 3rem;
         overflow: hidden;
         position:relative;
         width: 100%;
         transition: height 0.5 ease-out;
+    }
+    #nav_container nav a:first-child{
+        margin-top: 3rem;
     }
     #nav_container nav a{
         margin-bottom: 1.3rem;
@@ -981,6 +982,9 @@ div .blogbutton{
     }
     #nav_container img{
         margin: 1.5rem 0 0 0.7rem;
+    }
+    input#menu-btn:checked~nav{
+        height: 18em;
     }
     /* ____________________________ */
  }
