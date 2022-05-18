@@ -369,6 +369,7 @@ display:block;
     opacity: 0.3;
 }  
 
+
 .blogpar p {
     color: grey;
 }
@@ -409,9 +410,11 @@ hr{
 
 .blogbox1 .blogpar {
     width: 50%;
+    height: 3em;
     float: right;
-    padding: 0.6em;
+    padding: 1.6em;
     z-index: 2;
+    vertical-align: middle;
 }
 
 .blogbox1 img {
@@ -453,9 +456,11 @@ hr{
 
 .blogbox2 .blogpar {
     width: 50%;
+    height: 3em;
     float: right;
-    padding: 0.6em;
-    z-index: 1;
+    padding: 1.6em;
+    z-index: 2;
+    vertical-align: middle;
 }
 
 .blogbox2 img {
@@ -466,16 +471,15 @@ hr{
  z-index: 0;
 }
     .blogbox2 img:hover {
-    transform: rotate(5deg) scale(1.1) ;
-    -webkit-transform: rotate(5deg) scale(1.1) ;
-    -moz-transform: rotate(5deg) scale(1.1) ;
-    transition-duration: 0.8s;
-    transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
-    box-sizing: border-box;
-    overflow: hidden;
-    z-index: 0;
-    margin-left:-10px;
-
+        transform: rotate(5deg) scale(1.1) ;
+        -webkit-transform: rotate(5deg) scale(1.1) ;
+        -moz-transform: rotate(5deg) scale(1.1) ;
+        transition-duration: 0.8s;
+        transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
+        box-sizing: border-box;
+        overflow: hidden;
+        z-index: 0;
+        margin-left:-15px;
     } 
 
     .blogbox3 {
@@ -487,9 +491,11 @@ hr{
     
     .blogbox3 .blogpar {
         width: 50%;
-        float: left;
-        padding: 0.6em;
-        z-index: 1;
+        height: 3em;
+        float: right;
+        padding: 1.6em;
+        z-index: 2;
+        vertical-align: middle;
     }
     
     .blogbox3 img {
@@ -500,16 +506,15 @@ hr{
      z-index: 0;
     }
         .blogbox3 img:hover {
-        transform: rotate(5deg) scale(1.1) ;
-        -webkit-transform: rotate(5deg) scale(1.1) ;
-        -moz-transform: rotate(5deg) scale(1.1) ;
-        transition-duration: 0.8s;
-        transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
-        box-sizing: border-box;
-        overflow: hidden;
-        z-index: 0;
-        margin-right:-25px;
-
+            transform: rotate(5deg) scale(1.1) ;
+            -webkit-transform: rotate(5deg) scale(1.1) ;
+            -moz-transform: rotate(5deg) scale(1.1) ;
+            transition-duration: 0.8s;
+            transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
+            box-sizing: border-box;
+            overflow: hidden;
+            z-index: 0;
+            margin-left:-15px;
         } 
 
         .blogbox4 {
@@ -522,12 +527,11 @@ hr{
         
         .blogbox4 .blogpar {
             width: 50%;
+            height: 3em;
             float: left;
-            padding: 0.6em;
-            z-index: 1;
-            box-sizing: border-box;
-            overflow: hidden;
-    
+            padding: 1.6em;
+            z-index: 2;
+            vertical-align: middle;
         }
         
 
@@ -547,7 +551,7 @@ hr{
             box-sizing: border-box;
             overflow: hidden;
             z-index: 0;
-            margin-left:-15px;
+            margin-right:-25px;
 
             } 
 
@@ -561,9 +565,11 @@ hr{
             
             .blogbox5 .blogpar {
                 width: 50%;
+                height: 3em;
                 float: left;
-                padding: 0.6em;
-                z-index: 1;
+                padding: 1.6em;
+                z-index: 2;
+                vertical-align: middle;
             }
             
             .blogbox5 img {
@@ -582,7 +588,7 @@ hr{
                 box-sizing: border-box;
                 overflow: hidden;
                 z-index: 0;
-                margin-left:-15px;
+                margin-right:-25px;
 
                 } 
         
@@ -595,11 +601,11 @@ hr{
                 
                 .blogbox6 .blogpar {
                     width: 50%;
+                    height: 3em;
                     float: right;
-                    padding: 0.6em;
-                    z-index: 1;
-                    box-sizing: border-box;
-                    overflow: hidden;
+                    padding: 1.6em;
+                    z-index: 2;
+                    vertical-align: middle;
                 }
                 
                 .blogbox6 img {
@@ -610,16 +616,15 @@ hr{
                  z-index: -1;
                 }
                     .blogbox6 img:hover {
-                    transform: rotate(5deg) scale(1.1) ;
-                    -webkit-transform: rotate(5deg) scale(1.1) ;
-                    -moz-transform: rotate(5deg) scale(1.1) ;
-                    transition-duration: 0.8s;
-                    transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
-                    box-sizing: border-box;
-                    overflow: hidden;
-                    z-index: -1;
-                    margin-left:-15px;
-
+                        transform: rotate(5deg) scale(1.1) ;
+                        -webkit-transform: rotate(5deg) scale(1.1) ;
+                        -moz-transform: rotate(5deg) scale(1.1) ;
+                        transition-duration: 0.8s;
+                        transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        z-index: 0;
+                        margin-left:-15px;
                     }
 
 
