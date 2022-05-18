@@ -62,7 +62,83 @@ span {
 
 
 /* header */
-
+#background_banner img{ 
+    display: block;
+    width: 100%;
+}
+#background_banner{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+#background_banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../images/overlay-pattern.png), #000000;
+    opacity: 0.3;
+}
+#nav_container{
+    padding: 2.8em 2.8em 1.7em 2.8em;
+    width: 90%;
+    margin: -5.5rem auto 0;
+    background-color: #ffffffe6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+#nav_container img{
+    position: relative;
+    bottom: 0.5em;
+}
+#nav_container nav{
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+.nav_link{
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 1em;
+    color: #000;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+.nav_link:hover{
+    text-decoration: none;
+}
+.nav_link:active{
+    text-decoration: none;
+}
+.nav_link:after{
+    content: ""; 
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FF5333;
+    opacity: 0; 
+    position: absolute; 
+    margin-top: 0.5em;
+    transition: opacity .1s linear;
+}
+.nav_link:hover:after {
+    display: block;
+    opacity: 1;
+}
+.nav_link:active:after {
+    display: block;
+    opacity: 1;
+}
 /* header */
 
 /* HOME */
@@ -220,11 +296,42 @@ a.next {
 
 
 /* ABOUT US */
-
+#about_us{
+    background-color: #f6f6f6;
+    padding: 4.375rem 0;
+}
+#about_us h2{
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 2.5rem auto;
+    width: 80%;
+}
+#about_us span{
+    font-weight: 700;
+}
+#about_us img{
+    display: block;
+    margin: 0 auto;
+}
+#about_us hr{
+    width: 11em;
+    margin-bottom: 2.5rem;
+    border: 0;
+    height: 1px;
+    background-color: #c8c1b3;
+}
+#about_us p{
+    color: #959595;
+    text-align: center;
+    line-height: 1.8em;
+}
 /* ABOUT US */
 
 /* BLOG */
 
+/* HEAD
+
+HEAD */
 
 #blog_background {
 background-image: url(images/blog/blog-bg.jpg);    
@@ -393,7 +500,7 @@ hr{
        overflow: hidden;
    } 
 
-.blogbutton{
+#menu_button{
     background-color: orangered;
     text-align: right;
     margin: 0 auto;
@@ -402,8 +509,9 @@ hr{
     padding:  2rem 5rem ;
     color: white;
     border:none;
+    
 }
-.blogbutton:hover {
+#menu_button:hover {
         background-color:transparent;
         border: orangered 1px solid;
         color: orangered;
@@ -411,37 +519,30 @@ hr{
         animation-delay: 1200ms;
     }
 
-
-   
-
-
-
-
-
-
-
 /* BLOG */
 
 /* MENU */
 
 
 .menu {
+    margin: 2.5%;
+    margin-top: 10%;
     position: relative;
-    margin-top: 15%;
 }
 
 
 
 .menu > div:nth-child(-n+3) {
     text-align: center;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 
 }
 
 .menu > div:nth-child(2) {
-    margin: 5% 30%;
+    margin: 0 35%;
     border-top: 1px solid lightgrey;
     box-shadow: 1px 1px 1px lightgrey;
+    
 }
 
 .menu > div:nth-child(3)  {
@@ -474,12 +575,22 @@ hr{
 }
 
 .menu button:hover {
-    color: white;
     background-color: #FF5333;
+    color: white;
  
 }
 .menu p {
     color: grey;
+}
+
+.item_price {
+    margin-left: 0;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.item_price h3{
+   text-align: left;
 }
 
 
@@ -509,29 +620,29 @@ hr{
     }
 
     .item_price .pancakes {
-        /* border-bottom: 1px dotted rgb(96, 89, 50); */
-        width: 88%;
-        /* text-align: right; */
+        
+        width: 80%;
+        
     }
     
     .item_price .pot_pie {
-        width: 81.2%;
+        width: 70%;
     }
     
     .item_price .cereal {
-        width: 81%;
+        width: 70%;
     }
     
     .item_price .skewers {
-        width: 87.8%;
+        width: 80%;
     }
     
     .item_price .steak {
-        width: 71.8%;
+        width: 55%;
     }
     
     .item_price .salad {
-        width: 90%;
+        width: 83%;
     }
     .item_price div:nth-child(2) {
         border-bottom: 1px dotted rgb(96, 89, 50);
@@ -541,13 +652,18 @@ hr{
 
     
     .menu > div:nth-child(2) {
-        margin: 2.5% 45%;
+        margin: 2.5% 40%;
+        
+    }
+
+    .menu > div:nth-child(3) {
+        margin: 0 10%;
         
     }
 
     .menu > div:nth-child(-n+3) {
         text-align: center;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     
     }
 
@@ -580,28 +696,28 @@ hr{
 
     .item_price .pancakes {
         /* border-bottom: 1px dotted rgb(96, 89, 50); */
-        width: 88%;
+        width: 91%;
         /* text-align: right; */
     }
     
     .item_price .pot_pie {
-        width: 81.2%;
+        width: 86%;
     }
     
     .item_price .cereal {
-        width: 81%;
+        width: 86%;
     }
     
     .item_price .skewers {
-        width: 87.8%;
+        width: 91%;
     }
     
     .item_price .steak {
-        width: 71.8%;
+        width: 80%;
     }
     
     .item_price .salad {
-        width: 90%;
+        width: 93%;
     }
     
     .item_price div:nth-child(2) {
@@ -612,7 +728,7 @@ hr{
 
 
     .menu > div:nth-child(2) {
-        margin: 2.5% 45%;
+        margin: 0 45%;
         
     }
 
@@ -644,14 +760,12 @@ hr{
 }
 
 
-
-
 /* MENU */
 
 /* NEWS */
 
 .newsletter_margin{
-    margin: 10% 0;
+    margin: 20% 0;
 }
 
 .newsletter {
@@ -660,15 +774,16 @@ hr{
 }
 
 .newsletter_inner {
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 15%;
+    padding-bottom: 15%;
     color: white;
+    font-size: 1.5rem;
 }
 
 
 
 .newsletter  p {
-    margin: 10%;
+    margin: 5%;
     color: white;
     
 }
@@ -680,14 +795,14 @@ hr{
 }
 
 .newsletter_inner > div:nth-child(2) {
-    margin: 0 30% ;
+    margin: 0 40% ;
     border-top: 1px solid white;
 
 }
 
-.newsletter_inner h1 {
+.newsletter_inner h2 {
     line-height: 1;
-    margin: 10%;
+    margin: 7.5%;
 
 }
 
@@ -704,7 +819,7 @@ hr{
 }
 
 .subscribe > div:nth-child(2)  {
-    width: 75%;
+    width: 40%;
     height: 45%;
 }
 
@@ -722,41 +837,57 @@ hr{
 
 }
 .subscribe button {
-   background-color: rgb(159, 195, 183);
+   background-color: #7EC3BB;
    color: white;
    font-variant: small-caps;
-   font-size: 1rem;
+   font-size: 1.3rem;
    
 }
 
 
 .subscribe button:hover {
-    background-color: rgb(135, 162, 153);
+    background-color: #6fb1a9;
  }
 
 
 
  @media screen and (min-width: 768px) {
+     
+    .newsletter_margin{
+        margin: 10 0;
+    }
+
+    .newsletter {
+        background: url(../images/subscribe-bg.jpg) no-repeat fixed 0;
+        background-size: cover;
+    }
 
     .newsletter_inner {
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 15%;
+        padding-bottom: 2.5%;
         color: white;
     }
+
     
-    
-    
-    .newsletter  p {
+    .newsletter_inner p {
         color: white;
+        margin: 2%;
+        font-size: 1rem;
+        
+    }
+
+    .newsletter_inner h2 {
+        color: white;
+        padding: 0;
+        margin: 0;
         
     }
 
     .subscribe {
 
-        margin-top: 5%;
-        width: 50%;
-        margin: 0 25%;
-        height: 100px;
+        width: 70%;
+        margin: 0 15%;
+        height: 150px;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -764,12 +895,12 @@ hr{
     }
 
     .subscribe > div:nth-child(2)  {
-        width: 25%;
+        width: 30%;
        
     }
 
     .subscribe > div:nth-child(1)  {
-        width: 75%;
+        width: 70%;
       
     }
 
@@ -782,7 +913,7 @@ hr{
 
     }
     .subscribe button {
-    background-color: rgb(159, 195, 183);
+    background-color: #7EC3BB;
     color: white;
     font-variant: small-caps;
     font-size: 1rem;
@@ -791,12 +922,15 @@ hr{
 
 
     .subscribe button:hover {
-        background-color: rgb(135, 162, 153);
+        background-color: #6fb1a9;
     }
 
     .newsletter_inner > div:nth-child(2) {
-        margin: 5% 45% ;
+        margin-top: 3% ;
+        margin-right: 40% ;
+        margin-left: 40% ;
         border-top: 1px solid white;
+        padding: 0;
     
     }
 
@@ -805,25 +939,44 @@ hr{
 
  @media screen and (min-width: 1024px) {
 
+    .newsletter_margin{
+        margin: 10%;
+    }
+
+    .newsletter {
+        background: url(../images/subscribe-bg.jpg) no-repeat fixed 0;
+        background-size: cover;
+    }
+
     .newsletter_inner {
-        padding-top: 5%;
+        padding-top: 10%;
         padding-bottom: 5%;
         color: white;
     }
     
     
-    
-    .newsletter  p {
+    .newsletter_inner p {
         color: white;
+        margin: 2%;
         
     }
+
+    .newsletter_inner h2 {
+        color: white;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+
 
 
     .subscribe {
 
         margin-top: 5%;
-        width: 40%;
-        margin: 0 30%;
+        margin-bottom: 0;
+        width: 50%;
+        margin: 0 25%;
         height: 150px;
         display: flex;
         flex-direction: row;
@@ -831,11 +984,11 @@ hr{
     }
 
     .subscribe > div:nth-child(2)  {
-        width: 25%;
+        width: 30%;
     }
 
     .subscribe > div:nth-child(1)  {
-        width: 75%;
+        width: 70%;
 
     }
 
@@ -848,7 +1001,7 @@ hr{
 
     }
     .subscribe button {
-    background-color: rgb(159, 195, 183);
+    background-color: #7EC3BB;
     color: white;
     font-variant: small-caps;
     font-size: 1rem;
@@ -857,12 +1010,15 @@ hr{
 
 
     .subscribe button:hover {
-        background-color: rgb(135, 162, 153);
+        background-color: #6fb1a9;
     }
 
     .newsletter_inner > div:nth-child(2) {
-        margin: 5% 45% ;
+        margin-top: 3% ;
+        margin-right: 45% ;
+        margin-left: 45% ;
         border-top: 1px solid white;
+        padding: 0;
     
     }
 
@@ -882,38 +1038,3 @@ hr{
 /* CONTACT US */
 
 
-/* 
-
-.subscribe {
-
-    margin-top: 5%;
-    width: 40%;
-    margin: 0 30%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.subscribe > div:nth-child(2)  {
-    width: 25%;
-}
-
-.subscribe > div:nth-child(1)  {
-    width: 75%;
-}
-
-.newsletter_inner > div:nth-child(2) {
-    margin: 2.5% 45%;
-    border-top: 1px solid white;
-
-}
-
-.subscribe input, .subscribe button {
-    width: 100%;
-    height: 100%;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-
-} */
