@@ -335,7 +335,25 @@ HEAD */
 
 #blog_background {
 background-image: url(../images/blog/blog-bg.jpg);    
+display:block;
+
 }
+
+  #blog_cont_background::after{
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../images/overlay-pattern.png), #000000;
+    opacity: 0.3;
+}  
+
+.blogpar p {
+    color: grey;
+}
+
 
 hr{
     width: 20%;
@@ -353,9 +371,10 @@ hr{
     height: 45em;
     display: grid;
     grid-template-columns: repeat(2, 50%); 
-    grid-template-rows: repeat(6, 15em);
+    grid-template-rows: repeat(4, 33%);
     box-sizing: border-box;
     overflow: hidden;
+    padding: 3em;
 /*     row-gap: 0.5em;
     column-gap: 0.5em; */
 }
@@ -364,7 +383,9 @@ hr{
 
 .blogbox1 {
     background-color: white;
-    z-index: 1;
+    z-index: 2;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .blogbox1 .blogpar {
@@ -376,10 +397,12 @@ hr{
 
 .blogbox1 img {
  width: 50%;
+ height: auto;
  transition: 0.8s ease-out;
  box-sizing: border-box;
  overflow: hidden;
  z-index: 0;
+ float: left;
 }
     .blogbox1 img:hover {
     transform: rotate(5deg) scale(1.1) ;
@@ -390,6 +413,7 @@ hr{
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
+    margin-left:-15px;
     } 
 
 
@@ -404,14 +428,15 @@ hr{
 .blogbox2 {
     background-color: white;
     z-index: 1;
-
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .blogbox2 .blogpar {
     width: 50%;
     float: right;
     padding: 0.6em;
-    z-index: 2;
+    z-index: 1;
 }
 
 .blogbox2 img {
@@ -430,19 +455,22 @@ hr{
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
+    margin-left:-10px;
+
     } 
 
     .blogbox3 {
         background-color: white;
         z-index: 1;
-    
+        box-sizing: border-box;
+        overflow: hidden;
     }
     
     .blogbox3 .blogpar {
         width: 50%;
-        float: right;
+        float: left;
         padding: 0.6em;
-        z-index: 2;
+        z-index: 1;
     }
     
     .blogbox3 img {
@@ -461,35 +489,35 @@ hr{
         box-sizing: border-box;
         overflow: hidden;
         z-index: 0;
+        margin-right:-25px;
+
         } 
 
         .blogbox4 {
             background-color: white;
             z-index: 1;
-        
+            box-sizing: border-box;
+            overflow: hidden;
+            border: 1px solid white;
         }
         
         .blogbox4 .blogpar {
             width: 50%;
-            float: right;
+            float: left;
             padding: 0.6em;
-            z-index: 2;
-        }
-        
-
-        .blogbox4 .blogimgcont{
+            z-index: 1;
             box-sizing: border-box;
             overflow: hidden;
-            z-index: 0;
-
+    
         }
+        
 
         .blogbox4 img {
          width: 50%;
          transition: 0.8s ease-out;
          box-sizing: border-box;
          overflow: hidden;
-         z-index: -1;
+         z-index: 0;
         }
             .blogbox4 img:hover {
             transform: rotate(5deg) scale(1.1) ;
@@ -500,19 +528,23 @@ hr{
             box-sizing: border-box;
             overflow: hidden;
             z-index: 0;
+            margin-left:-15px;
+
             } 
 
 
             .blogbox5 {
                 background-color: white;
                 z-index: 1;
+                box-sizing: border-box;
+                overflow: hidden;
             }
             
             .blogbox5 .blogpar {
                 width: 50%;
-                float: right;
+                float: left;
                 padding: 0.6em;
-                z-index: 2;
+                z-index: 1;
             }
             
             .blogbox5 img {
@@ -531,18 +563,24 @@ hr{
                 box-sizing: border-box;
                 overflow: hidden;
                 z-index: 0;
+                margin-left:-15px;
+
                 } 
         
                 .blogbox6 {
                     background-color: white;
                     z-index: 1;
+                    box-sizing: border-box;
+                    overflow: hidden;
                 }
                 
                 .blogbox6 .blogpar {
                     width: 50%;
                     float: right;
                     padding: 0.6em;
-                    z-index: 2;
+                    z-index: 1;
+                    box-sizing: border-box;
+                    overflow: hidden;
                 }
                 
                 .blogbox6 img {
@@ -550,7 +588,7 @@ hr{
                  transition: 0.8s ease-out;
                  box-sizing: border-box;
                  overflow: hidden;
-                 z-index: 0;
+                 z-index: -1;
                 }
                     .blogbox6 img:hover {
                     transform: rotate(5deg) scale(1.1) ;
@@ -560,41 +598,15 @@ hr{
                     transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
                     box-sizing: border-box;
                     overflow: hidden;
-                    z-index: 0;
+                    z-index: -1;
+                    margin-left:-15px;
+
                     }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 div .blogbutton{
-   /*  background-color: orangered;
-    margin: 0 auto;
-    margin-bottom: 4rem;
-    padding:  2rem 3rem ;
-    color: white;
-    border:none;
-    display: flex;
-    margin-right: 4.3rem;
-    margin-left: 30em; 
-
-        width:25%;
-        height:75px;
-        margin-top: 5%;
-        margin-left: 75%; */
-
         background-color: orangered;
         color: white;
         border:none;
@@ -603,8 +615,6 @@ div .blogbutton{
         margin-left: 70%;
         padding:  2rem 3rem ;
         text-align: center;
-
-    
 }
 .blogbutton:hover {
         background-color:transparent;
