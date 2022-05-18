@@ -310,10 +310,13 @@ a.next {
 
 /* BLOG */
 
+<<<<<<< HEAD
+=======
 HEAD
 
 HEAD
 
+>>>>>>> e5fdfcd2ece43f934efc77acd0a64f4bbc6f8e8f
 #blog_background {
 background-image: url(images/blog/blog-bg.jpg);    
 }
