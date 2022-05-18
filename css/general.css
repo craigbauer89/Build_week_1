@@ -153,6 +153,10 @@ input#menu-btn{
     display: block;
     opacity: 1;
 }
+
+ul {
+    list-style: none;
+}
 /* header */
 
 /* HOME */
@@ -791,6 +795,8 @@ hr{
 
 
 
+
+
 @media screen and (min-width: 768px) {
 
     .item_price {
@@ -861,6 +867,8 @@ hr{
         margin-right: 3px;
         
     }
+
+    
  
 }
 
@@ -934,6 +942,10 @@ hr{
         margin-top: 5%;
         margin-left: 75%;
         
+    }
+
+    .block_contact {
+        display: flex;
     }
 
 
@@ -1155,7 +1167,18 @@ hr{
         padding: 0;
     
     }
+    /* footer*/
 
+    
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 990px) {
+    .info_box ul li {
+        display: inline-block
+        
+    }
+
+    
  }
 
 
@@ -1265,10 +1288,15 @@ hr{
     text-transform: uppercase;
     width: 90%;
     margin: 0 auto;
+    list-style: none;
 }
 
 .footer, footer {
    display: block;
+}
+
+.gallery ul li, .link_social ul li{
+    display: inline-block;
 }
 
 .contact_us {
@@ -1289,6 +1317,9 @@ hr{
     margin-left: 2px;
 }
 
+.box_blog {
+    width: 30%;
+}
 
 
 form, .form_group, #input_name, #input_email, #input_message {
@@ -1383,8 +1414,8 @@ ul#lista1 li {
     
     margin: 1.3rem;
     
-         
-    }
+    }   
+    
     .link_social ul {
         display: flex; 
         list-style: none;
@@ -1393,21 +1424,8 @@ ul#lista1 li {
         .link_social ul li{
             margin: 1rem;
             font-size: 2rem;
-        } */
-
+ 
+       } 
+*/
 /* BLOCK MOD CLAUDIO FOR DESKOTP QUERY  */
-
-
-
-@media screen and (min-width: 768px) {
-    
-    .block_contact {
-        display: flex;
-    }
-
-}
-
-
-/* CONTACT US */
-
 
