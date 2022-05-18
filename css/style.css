@@ -506,7 +506,7 @@ button:hover {
 }
 
 .footer, footer {
-    display: block;
+   display: block;
 }
 
 .block {
@@ -572,4 +572,12 @@ form, .form_group, #input_name, #input_email, #input_message {
     
 }
 
+
+@media screen and (min-width: 768px) {
+    
+    .block_contact {
+        display: flex;
+    }
+
+}
 
