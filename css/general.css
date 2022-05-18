@@ -96,7 +96,7 @@ input#menu-btn{
     padding: 2.8em 2.8em 1.7em 2.8em;
     width: 90%;
     margin: -5.5rem auto 0;
-    background-color: #ffffffc4;
+    background-color: #ffffffe1;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -130,10 +130,11 @@ input#menu-btn{
 .nav_link:hover{
     text-decoration: none;
 }
-.nav_link:active{
+.nav_link.active{
     text-decoration: none;
-    color: blue;
+    color: #FF4F02;
 }
+
 .nav_link:after{
     content: ""; 
     display: block;
@@ -154,9 +155,6 @@ input#menu-btn{
     opacity: 1;
 }
 
-ul {
-    list-style: none;
-}
 /* header */
 
 /* HOME */
@@ -529,30 +527,57 @@ form, .form_group, #input_name, #input_email, #input_message {
 
 
 @media screen and (min-width: 1024px) {
+    #piatti {
+     width: 90%;
+ }
     
-    
-    #piatti {width: 90%;
+#blog_cont_background #piatti {
+       width: 95%;
+       display: grid;
+}
+}
+
+@media screen and (max-width: 768px) {
+    #blog_cont_background #piatti {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1, 100%; 
+        grid-template-rows: repeat(6, 100%);
+ }
+          
 }
 
 
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+
+ 
 
 #blog_background {
-background-image: url(../images/blog/blog-bg.jpg);    
+background: url(../images/blog/blog-bg.jpg) no-repeat fixed 0;    
 display:block;
-
+background-size: cover;
+padding-top: 3em;
 }
 
-  #blog_cont_background::after{
+/* #blog_background::before{
     content: "";
-    position: relative;
+    position:absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: url(../images/overlay-pattern.png), #000000;
+    background: url(../images/overlay-pattern.png), #000000 no-repeat fixed 0;
     opacity: 0.3;
-}  
+}   */
 
+#blog_background span {   
+     font-weight: bold;
+}
 
 .blogpar p {
     color: grey;
@@ -815,7 +840,7 @@ hr{
 
 
 
-div .blogbutton{
+ div .blogbutton{
         background-color: orangered;
         color: white;
         border:none;
@@ -831,7 +856,7 @@ div .blogbutton{
         color: orangered;
         border-radius: 5%;
         animation-delay: 1200ms;
-    }
+    } 
 
 /* BLOG */
 
@@ -1223,7 +1248,6 @@ div .blogbutton{
     /* ____________________________ */
  }
 
-
  @media screen and (min-width: 768px) {
 
 /* _________burger___________ */
@@ -1234,6 +1258,17 @@ div .blogbutton{
     }
     #nav_container label{
         display: none;
+    }
+    #nav_container{
+        padding-right: 1rem;
+        padding-bottom: 0.6rem;
+        width: 93%;
+    }
+     #nav_container img{
+        margin-left: -0.9rem;
+    }
+   #nav_container a{
+        margin: 0 0.7rem 0.8rem;
     }
 /* __________________________ */  
     .newsletter_margin{
