@@ -81,6 +81,18 @@ span {
     background: url(../images/overlay-pattern.png), #000000;
     opacity: 0.3;
 }
+
+input#menu-btn{
+    display: none;
+}
+input#menu-btn:checked~nav{
+    height: 8.3em;
+}
+.lni-menu{
+    color:#FF4F02;
+    font-size: 1.5rem;
+}
+
 #nav_container{
     padding: 2.8em 2.8em 1.7em 2.8em;
     width: 90%;
@@ -88,14 +100,16 @@ span {
     background-color: #ffffffe6;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     box-sizing: border-box;
     position: sticky;
     top: 0;
-    right: 0;
-    left: 0;
     z-index: 1000;
     
+}
+#nav_container i{
+    padding: 1rem 1.3rem 0 0;
 }
 #nav_container img{
     position: relative;
@@ -310,13 +324,6 @@ a.next {
 
 /* BLOG */
 
-<<<<<<< HEAD
-=======
-HEAD
-
-HEAD
-
->>>>>>> e5fdfcd2ece43f934efc77acd0a64f4bbc6f8e8f
 #blog_background {
 background-image: url(images/blog/blog-bg.jpg);    
 }
@@ -817,8 +824,38 @@ hr{
 
 
 
+ @media screen and (max-width: 768px){
+     /* _________burger___________ */
+    #nav_container nav{
+        height: 0;
+        overflow: hidden;
+        position:relative;
+        width: 100%;
+        transition: height 0.5 ease-out;
+    }
+    #nav_container{
+        padding: 0rem 0 1.8rem 0;
+        margin-top: -5rem;
+    }
+    #nav_container img{
+        margin: 1.5rem 0 0 0.7rem;
+    }
+    /* ____________________________ */
+ }
+
+
  @media screen and (min-width: 768px) {
-     
+
+/* _________burger___________ */
+
+    #nav_container nav a{
+        display: inline-block;
+        margin-left: 1em;
+    }
+    #nav_container label{
+        display: none;
+    }
+/* __________________________ */  
     .newsletter_margin{
         margin: 10 0;
     }
