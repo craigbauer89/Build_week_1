@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="css/styleH.css" /> -->
     <link rel="stylesheet" href="fonts/fontawesome-webfont.svg" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/general.css">
@@ -16,33 +17,30 @@
   </head>
   <body>
     <header>
-    <a name="top"></a>
       <div id="background_banner">
         <img src="images/header.jpg" alt="banner" />
       </div>
+    </header>
+    
+    <main>
+      
       <div id="nav_container">
         <img src="images/logo.png" alt="Logo" />
+        <label for="menu-btn"><i class="lni lni-menu"></i></label>
+        <input type="checkbox" name="menu-btn" id="menu-btn" />
         <nav>
           <a class="nav_link" href="#home">Home</a>
           <a class="nav_link" href="#about_us">About us</a>
-          <a class="nav_link" href="#blog">Blog</a>
+          <a class="nav_link" href="#blog_background">Blog</a>
           <a class="nav_link" href="#menu">Menu</a>
           <a class="nav_link" href="#news">News</a>
           <a class="nav_link" href="#contacts">Contacts</a>
         </nav>
-      </div>
-    </header>
-
-    
-        
-  
-
-   
-    
+        </div>
+      
 
 
-
-<div class="slides_container">
+<div class="slides_container" id="home">
   <div class="title1">
     <h3 class="title1">FEATURED <span>WORK</span></h3><!-- Next  --><a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
@@ -210,7 +208,7 @@
 
 
 
-    <div class="menu">
+    <div class="menu" id="menu">
         <div>
             <h1>our <span>MENU</span> the <span>PRICE</span></h1>
         </div>
@@ -322,7 +320,7 @@
     </div>
     <div class="newsletter_margin"></div>
     <div class="newsletter">
-        <div class="newsletter_inner">
+        <div class="newsletter_inner" id="news">
             <div>
                 <h2>SUBSCRIBE <span>to our</span> NEWSLETTER</h2>
             </div>
@@ -344,119 +342,115 @@
 <main>
 
 
-  <section class="contact_us">
+  <section class="contact_us" id="contacts">
   
-    <div class="container">
-
-       
-
-          <h2>Our <span>Contact Us</span></h2>
-          <hr>
-          <h3>Sign up for <span>Email alerts</span></h3>
-
-          <form>
-             
-            <div class="form_group">
-               <input type="name" id="input_name" placeholder="write your full name here...">
-            </div>
-            <div class="form_group">
-               <input type="email" id="input_email" placeholder="write your email address here...">
-            </div>
-            <div class="form_group">
-               <textarea id="input_message" placeholder="write your message here..."></textarea>
-            </div>
-           </form>
-
-           <a href ="#" button id="button_container" onclick="topFunction()">Send your message</a></button>
+        <div class="container_contact">
+    
+           
+          
+            <h2>Our <span>Contact Us</span></h2>
+            <hr>
+            <h3>Sign up for <span>Email alerts</span></h3>
+    
+              <form>
+                 
+                <div class="form_group">
+                   <input type="name" id="input_name" placeholder="write your full name here...">
+                </div>
+                <div class="form_group">
+                   <input type="email" id="input_email" placeholder="write your email address here...">
+                </div>
+                <div class="form_group">
+                   <textarea id="input_message" placeholder="write your message here..."></textarea>
+                </div>
+               </form>
+    
+               <a href ="#" button id="button_container" onclick="topFunction()">Send your message</a></button>
+               </div>
+    
+        
+    
+        </div>
+    
+    </section>
+    </main>
+    
+    <section class="footer">
+    
+      <div class="block_contact">
+    
+        <div class="box_contact">
+          <h3>Contact <span>Info</span></h3>
+          <div class="info_box">
+             <ul>
+                <li><h4><i class="fa fa-phone"></i>Telefone</h4>
+                <p>(000) 123 456 78- (000) 123 4567 89</p></li>
+                <li><h4><i class="fa fa-map-marker"></i>Address</h4>
+                <p>2046 Blue Spruce Lane Laurel Canada</p></li> 
+                <li><h4><i class="fa fa-envelope"></i>Email</h4>
+                <p>rest@gmail.com - rest@mail.ru</p></li>                 
+             </ul>
            </div>
-
+        </div>
     
-
-    </div>
-
-</section>
-</main>
-
-<section class="footer">
-
-  <div  class="container">
-
-  <div class="container_contact">
+        <div class="box_blog">
+          <h3>Latest <span>blog posts</span></h3>
+            <div class="info_box">
+                <ul>
+                  <li><h4>Nov 9-2014</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugiat deleniti iste alias voluptatum, ipsam reprehenderit doloremque quam consequatur sunt rem libero cum magni distinctio officiis dolores consectetur accusamus. Architecto.</p></li>
+                  <li><h4>Sept 8-2014</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cum nihil ab ex atque maxime odio numquam aperiam dignissimos ad consequatur odit molestias dolor illum laborum placeat facere, accusantium sed.</p></li>                 
+                </ul>
+              </div>
     
-       <div class="block_contact">
-
-         <div class="box_contact">
-            <h3>Contact <span>Info</span></h3>
-             <div class="info_box">
-                 <ul>
-                    <li><h4><i class="fa fa-phone"></i>Telefone</h4>
-                    <p>(000) 123 456 78- (000) 123 4567 89</p></li>
-                    <li><h4><i class="fa fa-map-marker"></i>Address</h4>
-                    <p>2046 Blue Spruce Lane Laurel Canada</p></li> 
-                    <li><h4><i class="fa fa-envelope"></i>Email</h4>
-                    <p>rest@gmail.com - rest@mail.ru</p></li>                 
-                 </ul>
-             </div>
-         </div>
-
-         <div class="box_blog">
-            <h3>Latest <span>blog posts</span></h3>
-             <div class="blog_box">
-                 <ul>
-                    <li><h4>Nov 9-2014</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugiat deleniti iste alias voluptatum, ipsam reprehenderit doloremque quam consequatur sunt rem libero cum magni distinctio officiis dolores consectetur accusamus. Architecto.</p></li>
-                    <li><h4>Sept 8-2014</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cum nihil ab ex atque maxime odio numquam aperiam dignissimos ad consequatur odit molestias dolor illum laborum placeat facere, accusantium sed.</p></li>                 
-                 </ul>
-             </div>
-
-         </div>
-
+        </div>
+    
         <div class="box_media">
             <div class="gallery">
-                <h3>Photo <span>Stream</span></h3>
-                <ul>
-                  <li><img src="images/photo/photo-1.jpg" alt=""></li>
-                  <li><img src="images/photo/photo-2.jpg" alt=""></li>
-                  <li><img src="images/photo/photo-3.jpg" alt=""></li>
-                  <li><img src="images/photo/photo-4.jpg" alt=""></li>
-                </ul>
+                    <h3>Photo <span>Stream</span></h3>
+                    <ul>
+                      <li><img src="images/photo/photo-1.jpg" alt=""></li>
+                      <li><img src="images/photo/photo-2.jpg" alt=""></li>
+                      <li><img src="images/photo/photo-3.jpg" alt=""></li>
+                      <li><img src="images/photo/photo-4.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="link_social">
+                 <h3>Follow <span>us</span></h3>
+                 <ul>
+                   <li><i class="fa fa-twitter"></i></li>
+                   <li><i class="fa fa-facebook"></i></li>
+                   <li><i class="fa fa-dribbble"></i></li>
+                   <li><i class="fa fa-behance"></i></li>
+               </ul>
+              </div>
             </div>
-            <div class="link_social">
-             <h3>Follow <span>us</span></h3>
-             <ul>
-               <li><i class="fa fa-twitter"></i></li>
-               <li><i class="fa fa-facebook"></i></li>
-               <li><i class="fa fa-dribbble"></i></li>
-               <li><i class="fa fa-behance"></i></li>
-           </ul>
-          </div>
         </div>
     </div>
  </div>
   
 </section>
+
+</main>
   
     <footer>
   
       
-      <div class="container_footer">
-
-        <br>
-  
-        <div class="block">
-        <p>Copyright © 2014 - All Rights Reserved.Design and Developed By <a href="http://www.themefisher.com">Themefisher</a></p>
-        </div>
-      </div>
-
-
-    </div>
-  </footer>
- <script src="js/script.js"></script>
- <script>
-
-
-</script>
-</body>
-</html>
-
+    </section>
+      
+        <footer>
+      
+          
+          <div class="container_footer">
+    
+            <br>
+      
+            <div class="block">
+            <p>Copyright © 2014 - All Rights Reserved.Design and Developed By <a href="http://www.themefisher.com">Themefisher</a></p>
+            </div>
+          </div>
+        </footer>
+       <script src="js/script.js"></script>
+      </body>
+    </html>
