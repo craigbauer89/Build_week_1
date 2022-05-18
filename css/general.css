@@ -96,7 +96,7 @@ input#menu-btn{
     padding: 2.8em 2.8em 1.7em 2.8em;
     width: 90%;
     margin: -5.5rem auto 0;
-    background-color: #ffffffc4;
+    background-color: #ffffffe1;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -130,10 +130,11 @@ input#menu-btn{
 .nav_link:hover{
     text-decoration: none;
 }
-.nav_link:active{
+.nav_link.active{
     text-decoration: none;
-    color: blue;
+    color: #FF4F02;
 }
+
 .nav_link:after{
     content: ""; 
     display: block;
@@ -153,6 +154,7 @@ input#menu-btn{
     display: block;
     opacity: 1;
 }
+
 /* header */
 
 /* HOME */
@@ -995,7 +997,6 @@ div .blogbutton{
     /* ____________________________ */
  }
 
-
  @media screen and (min-width: 768px) {
 
 /* _________burger___________ */
@@ -1006,6 +1007,17 @@ div .blogbutton{
     }
     #nav_container label{
         display: none;
+    }
+    #nav_container{
+        padding-right: 1rem;
+        padding-bottom: 0.6rem;
+        width: 93%;
+    }
+     #nav_container img{
+        margin-left: -0.9rem;
+    }
+   #nav_container a{
+        margin: 0 0.7rem 0.8rem;
     }
 /* __________________________ */  
     .newsletter_margin{
