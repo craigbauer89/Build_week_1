@@ -368,8 +368,8 @@ a.next {
     #blog_cont_background #piatti {
         width: 95%;
         display: grid;
-        grid-template-columns: repeat(2, 100%); 
-        grid-template-rows: repeat(4, 33%);
+        grid-template-columns: 1, 100%; 
+        grid-template-rows: repeat(6, 100%);
  }
           
 }
