@@ -31,7 +31,7 @@
         <nav>
           <a class="nav_link" href="#home">Home</a>
           <a class="nav_link" href="#about_us">About us</a>
-          <a class="nav_link" href="#blog">Blog</a>
+          <a class="nav_link" href="#blog_background">Blog</a>
           <a class="nav_link" href="#menu">Menu</a>
           <a class="nav_link" href="#news">News</a>
           <a class="nav_link" href="#contacts">Contacts</a>
@@ -40,7 +40,7 @@
       
 
 
-<div class="slides_container" class="reveal">
+<div class="slides_container" id="home" class="reveal"></div>>
   <div class="title1">
     <h3 class="title1">FEATURED <span>WORK</span></h3><!-- Next  --><a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
@@ -90,7 +90,7 @@
     </div>
 
     <!-- ABOUT US -->
-    <section id="about_us">
+    <section  id="about_us">
       <div class="container">
         <img src="images/cooker-img.png" alt="Chef" />
         <h2>
@@ -111,6 +111,9 @@
     <!-- slider close -->
     </section>
         
+
+    <div id="blog_cont_background">
+
     <div id="blog_background">
         <h2>Latest <span>From</span> the <span>Blog</span></h2>
         
@@ -142,7 +145,6 @@
         </div>
     
         <div class="blogbox3">
-            <img src="images/blog/blog-img-3.jpg">         
     
             <div class="blogpar"> 
                 <h3>Homestyle <br> Chicken Pot Pie</h3>
@@ -150,18 +152,20 @@
                  <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...
                  </p>
              </div>
+             <img src="images/blog/blog-img-3.jpg">         
+
         </div>
     
     
         <div class="blogbox4">
-            <div class="blogimgcont"><img src="images/blog/blog-img-4.jpg">         
-            </div>
             <div class="blogpar"> 
                 <h3>Homestyle <br> Chicken Pot Pie</h3>
                  <hr>
                  <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...
                  </p>
              </div>
+             <img src="images/blog/blog-img-4.jpg">  
+
         </div>
     
         <div class="blogbox5">
@@ -199,14 +203,18 @@
     
     </div>
 
+    </div>
 
-    <div class="menu">
-        <div>
+
+
+
+    <div class="menu" id="menu">
+        <div class="reveal">
             <h1>our <span>MENU</span> the <span>PRICE</span></h1>
         </div>
         <div></div>
         <div>
-            <p>
+            <p class="reveal">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
               minim veniam, quis nostrud exercitation ullamco
@@ -215,126 +223,129 @@
         <div>
             <h2>FEATURED <span>ON THE WEEK</span></h2>
         </div>
-        <div class="item_price">
+        <div class="item_price reveal">
           <div> 
             <h3>Pancakes n' Such</h3>
           </div>
-          <div class="pancakes">
+          <div class="pancakes reveal">
             <sub>$ 25.00</sub>
           </div>
         </div>
         <div>
-          <p>
+            <p class="reveal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim&&
           </p>
         </div>
         <div>
-            <div class="item_price">
+            <div class="item_price reveal">
             <div>
                 <h3>Homestyle Chicken Pot Pie</h3>
             </div>
-            <div class="pot_pie">
+            <div class="pot_pie reveal">
                 <sub>$ 10.00</sub>
             </div>
             </div>
-            <p>
+            <p class="reveal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim&&
             </p>
         </div>
         <div>
-            <div class="item_price">
+            <div class="item_price reveal">
             <div>
                 <h3>Cereal, Panecillos y Frutas</h3>
             </div>
-            <div class="cereal">
+            <div class="cereal reveal">
                 <sub>$ 5.00</sub>
             </div>
             </div>
-            <p>
+            <p class="reveal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim&&
             </p>
         </div>
         <div>
-            <div class="item_price">
+            <div class="item_price reveal">
             <div>
                 <h3>Meat of Skewers</h3>
             </div>
-            <div class="skewers">
+            <div class="skewers reveal">
                 <sub>$ 15.00</sub>
             </div>
             </div>
-            <p>
+            <p class="reveal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim&&
             </p>
         </div>
         <div>
-            <div class="item_price">
+            <div class="item_price reveal">
             <div>
                 <h3>Steak with a Garlic and Parsley Risotto</h3>
             </div>
-            <div  class="steak">
+            <div  class="steak reveal">
                 <sub>$ 75.00</sub>
             </div>
             </div>
-            <p>
+            <p class="reveal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim&&
             </p>
         </div>
         <div>
-            <div class="item_price">
+            <div class="item_price reveal">
             <div>
                 <h3>Caesar Salad</h3>
             </div>
-            <div class="salad">
+            <div class="salad reveal">
                 <sub>$ 7.00</sub>
             </div>
             </div>
-            <p>
+            <p class="reveal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim&&
             </p>
         </div>
-        <div class="more_info">
+        <div class="more_info reveal">
             <button id="news_button" onclick="topFunction()">more info</button>
         </div>
         </div>
     </div>
     <div class="newsletter_margin"></div>
-    <div class="newsletter">
-        <div class="newsletter_inner">
-            <div>
-                <h2>SUBSCRIBE <span>to our</span> NEWSLETTER</h2>
-            </div>
-            <div>
-            </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-            </div>
-            <div class="subscribe">
-                <div>
-                    <input placeholder="Enter your email to subscribe..." />
-                </div>
-                <div>
-                    <button id="news_button" onclick="topFunction()">subscribe</button>
+        <div class="newsletter ">
+            <div class="newsletter_inner ">
+                    <div class="reveal">
+                        <h2>SUBSCRIBE <span>to our</span> NEWSLETTER</h2>
+                    </div>
+                    <div class="reveal">
+                    </div>
+                    <div class="reveal">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                <div class="subscribe">
+                    <div>
+                        <input placeholder="Enter your email to subscribe..." />
+                    </div>
+                    <div>
+                        <button id="news_button" onclick="topFunction()">subscribe</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
+
+
 <main>
 
 
-    <section class="contact_us">
+  <section class="contact_us" id="contacts">
   
         <div class="container_contact">
     
