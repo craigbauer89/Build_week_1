@@ -310,15 +310,12 @@ a.next {
 
 /* BLOG */
 
-<<<<<<< HEAD
-=======
-HEAD
+/* HEAD
 
-HEAD
+HEAD */
 
->>>>>>> e5fdfcd2ece43f934efc77acd0a64f4bbc6f8e8f
 #blog_background {
-background-image: url(images/blog/blog-bg.jpg);    
+background-image: url(../images/blog/blog-bg.jpg);    
 }
 
 hr{
@@ -330,28 +327,42 @@ hr{
 }
 
 #piatti {
-    background-color: orangered;
+/*     background-color: white;
+ */  
     margin: 0 auto;
     width: 80%;
     height: 45em;
     display: grid;
-    grid-template-columns: repeat(4, 25%); 
+    grid-template-columns: repeat(2, 50%); 
     grid-template-rows: repeat(6, 15em);
     box-sizing: border-box;
     overflow: hidden;
+/*     row-gap: 0.5em;
+    column-gap: 0.5em; */
 }
 
+
+
 .blogbox1 {
- background-image: url(../images/blog/blog-img-1.jpg);
- background-position:center;
- background-size:cover;
- background-repeat: no-repeat;
- object-fit:cover;
+    background-color: white;
+    z-index: 1;
+}
+
+.blogbox1 .blogpar {
+    width: 50%;
+    float: right;
+    padding: 0.6em;
+    z-index: 2;
+}
+
+.blogbox1 img {
+ width: 50%;
  transition: 0.8s ease-out;
  box-sizing: border-box;
  overflow: hidden;
+ z-index: 0;
 }
-    .blogbox1:hover {
+    .blogbox1 img:hover {
     transform: rotate(5deg) scale(1.1) ;
     -webkit-transform: rotate(5deg) scale(1.1) ;
     -moz-transform: rotate(5deg) scale(1.1) ;
@@ -359,17 +370,8 @@ hr{
     transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
     box-sizing: border-box;
     overflow: hidden;
+    z-index: 0;
     } 
-
-.blogbox2 {
-    z-index: 8;
-    background-color: white;
-/*   transition-property: width, background-color ;
-  transition-duration:2s, 2s ; */
-
-}
-
-
 
 
 /* .blogbox2 .square {
@@ -380,121 +382,211 @@ hr{
     vertical-align: middle;
 } */
 
-.blogbox3 {
-    background-image: url(../images/blog/blog-img-2.jpg);
-    background-position:center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    object-fit:cover;
-    transition: 0.8s ease-out;
+.blogbox2 {
+    background-color: white;
+    z-index: 1;
+
+}
+
+.blogbox2 .blogpar {
+    width: 50%;
+    float: right;
+    padding: 0.6em;
+    z-index: 2;
+}
+
+.blogbox2 img {
+ width: 50%;
+ transition: 0.8s ease-out;
+ box-sizing: border-box;
+ overflow: hidden;
+ z-index: 0;
+}
+    .blogbox2 img:hover {
+    transform: rotate(5deg) scale(1.1) ;
+    -webkit-transform: rotate(5deg) scale(1.1) ;
+    -moz-transform: rotate(5deg) scale(1.1) ;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
     box-sizing: border-box;
     overflow: hidden;
-   }
-   .blogbox3:hover {
-       transform: rotate(5deg) scale(1.1) ;
-       -webkit-transform: rotate(5deg) scale(1.1) ;
-       -moz-transform: rotate(5deg) scale(1.1) ;
-       transition-duration: 0.8s;
-       transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
-       box-sizing: border-box;
-       overflow: hidden;
+    z-index: 0;
     } 
 
-   
-.blogbox4 {
-    background-image: url(../images/blog/blog-img-3.jpg);
-    background-position:center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    object-fit:cover;
-    transition: 0.8s ease-out;
-    box-sizing: border-box;
-    overflow: hidden;
-   }
-   .blogbox4:hover {
-       transform: rotate(5deg) scale(1.1) ;
-       -webkit-transform: rotate(5deg) scale(1.1) ;
-       -moz-transform: rotate(5deg) scale(1.1) ;
-       transition-duration: 0.8s;
-       transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
-       box-sizing: border-box;
-       overflow: hidden; 
-   } 
+    .blogbox3 {
+        background-color: white;
+        z-index: 1;
+    
+    }
+    
+    .blogbox3 .blogpar {
+        width: 50%;
+        float: right;
+        padding: 0.6em;
+        z-index: 2;
+    }
+    
+    .blogbox3 img {
+     width: 50%;
+     transition: 0.8s ease-out;
+     box-sizing: border-box;
+     overflow: hidden;
+     z-index: 0;
+    }
+        .blogbox3 img:hover {
+        transform: rotate(5deg) scale(1.1) ;
+        -webkit-transform: rotate(5deg) scale(1.1) ;
+        -moz-transform: rotate(5deg) scale(1.1) ;
+        transition-duration: 0.8s;
+        transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
+        box-sizing: border-box;
+        overflow: hidden;
+        z-index: 0;
+        } 
 
-   
-.blogbox5 {
-    background-image: url(../images/blog/blog-img-4.jpg);
-    background-position:center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    object-fit:cover;
-    transition: 0.8s ease-out;
-    box-sizing: border-box;
-    overflow: hidden;
-   }
-   .blogbox5:hover {
-       transform: rotate(5deg) scale(1.1) ;
-       -webkit-transform: rotate(5deg) scale(1.1) ;
-       -moz-transform: rotate(5deg) scale(1.1) ;
-       transition-duration: 0.8s;
-       transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
-       box-sizing: border-box;
-       overflow: hidden;
-   } 
+        .blogbox4 {
+            background-color: white;
+            z-index: 1;
+        
+        }
+        
+        .blogbox4 .blogpar {
+            width: 50%;
+            float: right;
+            padding: 0.6em;
+            z-index: 2;
+        }
+        
 
-   
-.blogbox6 {
-    background-image: url(../images/blog/blog-img-5.jpg);
-    background-position:center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    object-fit:cover;
-    transition: 0.8s ease-out;
-    box-sizing: border-box;
-    overflow: hidden;
-   }
-   .blogbox6:hover {
-       transform: rotate(5deg) scale(1.1) ;
-       -webkit-transform: rotate(5deg) scale(1.1) ;
-       -moz-transform: rotate(5deg) scale(1.1) ;
-       transition-duration: 0.8s;
-       transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
-       box-sizing: border-box;
-       overflow: hidden;
-   } 
+        .blogbox4 .blogimgcont{
+            box-sizing: border-box;
+            overflow: hidden;
+            z-index: 0;
 
-   
-.blogbox7 {
-    background-image: url(../images/blog/blog-img-6.jpg);
-    background-position:center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    object-fit:cover;
-    transition: 0.8s ease-out;
-    box-sizing: border-box;
-    overflow: hidden;
-   }
-   .blogbox7:hover {
-       transform: rotate(5deg) scale(1.1) ;
-       -webkit-transform: rotate(5deg) scale(1.1) ;
-       -moz-transform: rotate(5deg) scale(1.1) ;
-       transition-duration: 0.8s;
-       transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
-       box-sizing: border-box;
-       overflow: hidden;
-   } 
+        }
 
-#menu_button{
-    background-color: orangered;
-    text-align: right;
+        .blogbox4 img {
+         width: 50%;
+         transition: 0.8s ease-out;
+         box-sizing: border-box;
+         overflow: hidden;
+         z-index: -1;
+        }
+            .blogbox4 img:hover {
+            transform: rotate(5deg) scale(1.1) ;
+            -webkit-transform: rotate(5deg) scale(1.1) ;
+            -moz-transform: rotate(5deg) scale(1.1) ;
+            transition-duration: 0.8s;
+            transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
+            box-sizing: border-box;
+            overflow: hidden;
+            z-index: 0;
+            } 
+
+
+            .blogbox5 {
+                background-color: white;
+                z-index: 1;
+            }
+            
+            .blogbox5 .blogpar {
+                width: 50%;
+                float: right;
+                padding: 0.6em;
+                z-index: 2;
+            }
+            
+            .blogbox5 img {
+             width: 50%;
+             transition: 0.8s ease-out;
+             box-sizing: border-box;
+             overflow: hidden;
+             z-index: 0;
+            }
+                .blogbox5 img:hover {
+                transform: rotate(5deg) scale(1.1) ;
+                -webkit-transform: rotate(5deg) scale(1.1) ;
+                -moz-transform: rotate(5deg) scale(1.1) ;
+                transition-duration: 0.8s;
+                transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
+                box-sizing: border-box;
+                overflow: hidden;
+                z-index: 0;
+                } 
+        
+                .blogbox6 {
+                    background-color: white;
+                    z-index: 1;
+                }
+                
+                .blogbox6 .blogpar {
+                    width: 50%;
+                    float: right;
+                    padding: 0.6em;
+                    z-index: 2;
+                }
+                
+                .blogbox6 img {
+                 width: 50%;
+                 transition: 0.8s ease-out;
+                 box-sizing: border-box;
+                 overflow: hidden;
+                 z-index: 0;
+                }
+                    .blogbox6 img:hover {
+                    transform: rotate(5deg) scale(1.1) ;
+                    -webkit-transform: rotate(5deg) scale(1.1) ;
+                    -moz-transform: rotate(5deg) scale(1.1) ;
+                    transition-duration: 0.8s;
+                    transition-timing-function: cubic-bezier(.63,.07,.54,.8); 
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    z-index: 0;
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div .blogbutton{
+   /*  background-color: orangered;
     margin: 0 auto;
-    margin-top: 2rem;
     margin-bottom: 4rem;
-    padding:  2rem 5rem ;
+    padding:  2rem 3rem ;
     color: white;
     border:none;
+    display: flex;
+    margin-right: 4.3rem;
+    margin-left: 30em; 
+
+        width:25%;
+        height:75px;
+        margin-top: 5%;
+        margin-left: 75%; */
+
+        background-color: orangered;
+        color: white;
+        border:none;
+        width:20%;
+        height:75px;
+        margin-left: 70%;
+        padding:  2rem 3rem ;
+        text-align: center;
+
 }
-#menu_button:hover {
+.blogbutton:hover {
         background-color:transparent;
         border: orangered 1px solid;
         color: orangered;
