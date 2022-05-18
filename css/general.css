@@ -153,6 +153,10 @@ input#menu-btn{
     display: block;
     opacity: 1;
 }
+
+ul {
+    list-style: none;
+}
 /* header */
 
 /* HOME */
@@ -357,28 +361,53 @@ a.next {
      width: 90%;
  }
     
-   
+#blog_cont_background #piatti {
+       width: 95%;
+       display: grid;
 }
+}
+
+@media screen and (max-width: 768px) {
+    #blog_cont_background #piatti {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1, 100%; 
+        grid-template-rows: repeat(6, 100%);
+ }
+          
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+}
+
 
  
 
 #blog_background {
-background-image: url(../images/blog/blog-bg.jpg);    
+background: url(../images/blog/blog-bg.jpg) no-repeat fixed 0;    
 display:block;
-
+background-size: cover;
+padding-top: 3em;
 }
 
-  #blog_cont_background::after{
+/* #blog_background::before{
     content: "";
-    position: relative;
+    position:absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: url(../images/overlay-pattern.png), #000000;
+    background: url(../images/overlay-pattern.png), #000000 no-repeat fixed 0;
     opacity: 0.3;
-}  
+}   */
 
+#blog_background span {   
+     font-weight: bold;
+}
 
 .blogpar p {
     color: grey;
@@ -641,7 +670,7 @@ hr{
 
 
 
-div .blogbutton{
+ div .blogbutton{
         background-color: orangered;
         color: white;
         border:none;
@@ -657,7 +686,7 @@ div .blogbutton{
         color: orangered;
         border-radius: 5%;
         animation-delay: 1200ms;
-    }
+    } 
 
 /* BLOG */
 
@@ -769,6 +798,8 @@ div .blogbutton{
 
 
 
+
+
 @media screen and (min-width: 768px) {
 
     .item_price {
@@ -839,6 +870,8 @@ div .blogbutton{
         margin-right: 3px;
         
     }
+
+    
  
 }
 
@@ -912,6 +945,10 @@ div .blogbutton{
         margin-top: 5%;
         margin-left: 75%;
         
+    }
+
+    .block_contact {
+        display: flex;
     }
 
 
@@ -1133,7 +1170,18 @@ div .blogbutton{
         padding: 0;
     
     }
+    /* footer*/
 
+    
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 990px) {
+    .info_box ul li {
+        display: inline-block
+        
+    }
+
+    
  }
 
 
@@ -1243,10 +1291,15 @@ div .blogbutton{
     text-transform: uppercase;
     width: 90%;
     margin: 0 auto;
+    list-style: none;
 }
 
 .footer, footer {
    display: block;
+}
+
+.gallery ul li, .link_social ul li{
+    display: inline-block;
 }
 
 .contact_us {
@@ -1267,6 +1320,9 @@ div .blogbutton{
     margin-left: 2px;
 }
 
+.box_blog {
+    width: 30%;
+}
 
 
 form, .form_group, #input_name, #input_email, #input_message {
@@ -1361,8 +1417,8 @@ ul#lista1 li {
     
     margin: 1.3rem;
     
-         
-    }
+    }   
+    
     .link_social ul {
         display: flex; 
         list-style: none;
@@ -1371,21 +1427,8 @@ ul#lista1 li {
         .link_social ul li{
             margin: 1rem;
             font-size: 2rem;
-        } */
-
+ 
+       } 
+*/
 /* BLOCK MOD CLAUDIO FOR DESKOTP QUERY  */
-
-
-
-@media screen and (min-width: 768px) {
-    
-    .block_contact {
-        display: flex;
-    }
-
-}
-
-
-/* CONTACT US */
-
 
