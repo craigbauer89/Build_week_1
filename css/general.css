@@ -355,6 +355,9 @@ a.next {
 /* BLOG */
 
 @media screen and (min-width: 1024px) {
+    #piatti {
+     width: 90%;
+ }
     
 #blog_cont_background #piatti {
        width: 95%;
@@ -380,7 +383,7 @@ a.next {
 }
 
 
-
+ 
 
 #blog_background {
 background: url(../images/blog/blog-bg.jpg) no-repeat fixed 0;    
