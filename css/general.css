@@ -154,6 +154,10 @@ input#menu-btn:checked~nav{
     display: block;
     opacity: 1;
 }
+
+ul {
+    list-style: none;
+}
 /* header */
 
 /* HOME */
@@ -719,6 +723,8 @@ div .blogbutton{
 
 
 
+
+
 @media screen and (min-width: 768px) {
 
     .item_price {
@@ -789,6 +795,8 @@ div .blogbutton{
         margin-right: 3px;
         
     }
+
+    
  
 }
 
@@ -862,6 +870,10 @@ div .blogbutton{
         margin-top: 5%;
         margin-left: 75%;
         
+    }
+
+    .block_contact {
+        display: flex;
     }
 
 
@@ -1078,7 +1090,18 @@ div .blogbutton{
         padding: 0;
     
     }
+    /* footer*/
 
+    
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 990px) {
+    .info_box ul li {
+        display: inline-block
+        
+    }
+
+    
  }
 
 
@@ -1181,10 +1204,15 @@ div .blogbutton{
     text-transform: uppercase;
     width: 90%;
     margin: 0 auto;
+    list-style: none;
 }
 
 .footer, footer {
    display: block;
+}
+
+.gallery ul li, .link_social ul li{
+    display: inline-block;
 }
 
 .contact_us {
@@ -1205,6 +1233,9 @@ div .blogbutton{
     margin-left: 2px;
 }
 
+.box_blog {
+    width: 30%;
+}
 
 
 form, .form_group, #input_name, #input_email, #input_message {
@@ -1260,13 +1291,7 @@ form, .form_group, #input_name, #input_email, #input_message {
 }
 
 
-@media screen and (min-width: 768px) {
-    
-    .block_contact {
-        display: flex;
-    }
 
-}
 
 
 /* CONTACT US */
