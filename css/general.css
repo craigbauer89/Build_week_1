@@ -153,6 +153,8 @@ span {
     margin-right:5rem;
     justify-content: space-between;
     position: relative;
+    font-size: 1rem;
+    margin-top: 1.2rem;
     
     
 }
@@ -265,6 +267,7 @@ a.next {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    margin-bottom: 3rem;
     
 }
 
