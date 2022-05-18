@@ -353,12 +353,14 @@ a.next {
 /* BLOG */
 
 @media screen and (min-width: 1024px) {
+    #piatti {
+     width: 90%;
+ }
     
-    
-    #piatti {width: 90%;
+   
 }
 
-
+ 
 
 #blog_background {
 background-image: url(../images/blog/blog-bg.jpg);    
