@@ -82,9 +82,9 @@ span {
     opacity: 0.3;
 }
 #nav_container{
-    padding: 2.8em 2.8em 1em 2.8em;
+    padding: 2.8em 2.8em 1.7em 2.8em;
     width: 90%;
-    margin: -5.2rem auto 0;
+    margin: -5.5rem auto 0;
     background-color: #ffffffe6;
     display: flex;
     justify-content: space-between;
