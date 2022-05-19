@@ -1,4 +1,5 @@
 
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -41,7 +42,7 @@ function showSlides(n) {
 
       var windowheight = window.innerHeight;
       var revealtop = reveals[i].getBoundingClientRect().top;
-      var revealpoint = 150;
+      var revealpoint = 50;
 
       if(revealtop < windowheight - revealpoint){
         reveals[i].classList.add('active');
@@ -51,3 +52,20 @@ function showSlides(n) {
       }
     }
   }
+
+  // NAV ACTIVE SCROLL
+
+  const activeNav = document.getElementsByClassName('.nav_link');
+  const sec = document.getElementsByClassName('.active_nav');
+
+  function activeMenu(){
+    let len = sec.length;
+    while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+    activeNav.forEach(ltx => ltx.classList.remove('active_scroll'));
+    activeNav[len].classList.add('active_scroll');
+  }
+
+  activeMenu();
+  window.addEventListener('scroll', activeMenu);
+
+  //____________________________________________________
