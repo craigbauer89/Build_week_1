@@ -627,13 +627,13 @@ form, .form_group, #input_name, #input_email, #input_message {
 }
 
 
-@media screen and (min-width: 768px) {
-    #blog_background {
-        grid-template-columns: repeat(2, 40%); 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
-    }
-    #piatti {
+        #piatti {
         width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(3, 16%);
     }
        
 
