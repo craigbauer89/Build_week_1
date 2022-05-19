@@ -386,7 +386,10 @@ a.next {
  
 
 #blog_background {
-background: url(../images/blog/blog-bg.jpg) no-repeat fixed 0;    
+background: url(../images/overlay-pattern2.png), url(../images/blog/blog-bg.jpg) /*no-repeatrepeat fixed 0 */; 
+background-position: 0, 0;
+background-attachment: fixed, fixed;
+background-repeat: repeat, no-repeat; 
 display:block;
 background-size: cover;
 padding-top: 3em;
@@ -1074,6 +1077,14 @@ hr{
     }
     /* ____________________________ */
  }
+ @media screen and (min-width: 992px){
+    /* _________burger___________ */
+    #nav_container{
+        width: 980px;
+    }
+    /* ____________________________ */
+   }
+
 
  @media screen and (min-width: 768px) {
 
@@ -1089,7 +1100,7 @@ hr{
     #nav_container{
         padding-right: 1rem;
         padding-bottom: 0.6rem;
-        width: 93%;
+        width: 710px;
     }
      #nav_container img{
         margin-left: -0.9rem;
