@@ -578,9 +578,11 @@ form, .form_group, #input_name, #input_email, #input_message {
 @media screen and (min-width: 768px) {
     #blog_background {
         margin: 5px;
-        width: 90%;
         grid-template-columns: repeat(2, 40%); 
 
+    }
+    #piatti {
+        width: 90%;
     }
        
 
@@ -606,8 +608,7 @@ background-image: url(../images/overlay-pattern.png), url(../images/blog/blog-bg
 display:block;
 /* background-size: cover;
  */
-padding-top: 3em;
-background-repeat:repeat,no-repeat;
+background-repeat:repeat, no-repeat;
 
 /* background-attachment: fixed,fixed;
  */
