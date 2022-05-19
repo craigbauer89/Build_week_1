@@ -1325,38 +1325,66 @@ hr{
     }
     /* ____________________________ */
  }
- @media screen and (min-width: 992px){
+ @media screen and (min-width: 992px) and (max-width: 1200px) {
     /* _________burger___________ */
     #nav_container{
-        width: 980px;
+        width: 950px;
+        padding-right: 4em;
+    }
+       #nav_container label{
+        display: none;
+    }
+    #nav_container nav a{
+        margin-left: 0.6em;
     }
     /* ____________________________ */
    }
 
-
- @media screen and (min-width: 768px) {
-
-/* _________burger___________ */
-
-    #nav_container nav a{
-        display: inline-block;
-        margin-left: 1em;
+   @media screen and (min-width: 1200px){
+    /* _________burger___________ */
+    #nav_container{
+        width: 1150px;
     }
+
     #nav_container label{
         display: none;
     }
-    #nav_container{
-        padding-right: 1rem;
-        padding-bottom: 0.6rem;
-        width: 710px;
+    /* ____________________________ */
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* _________burger___________ */
+    
+        #nav_container nav a{
+            display: inline-block;
+            margin-left: 1em;
+        }
+        #nav_container label{
+            display: none;
+        }
+        #nav_container{
+            padding-right: 1rem;
+            padding-bottom: 0.6rem;
+            width: 710px;
+        }
+         #nav_container img{
+            margin-left: -0.9rem;
+        }
+       #nav_container a{
+            margin: 0 0.7rem 0.8rem;
+        }
+    /* __________________________ */ 
+
+        
     }
-     #nav_container img{
-        margin-left: -0.9rem;
+ @media screen and (min-width: 768px) {
+    h2{
+        font-size: 2.2rem;
     }
-   #nav_container a{
-        margin: 0 0.7rem 0.8rem;
+    h2 span{
+        font-size: 2.8rem;
     }
-/* __________________________ */  
     .newsletter_margin{
         margin: 10 0;
     }
@@ -1635,4 +1663,3 @@ ul#lista1 li {
        } */ 
 
 /* BLOCK MOD CLAUDIO FOR DESKOTP QUERY  */
-   
