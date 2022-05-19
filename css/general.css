@@ -270,7 +270,8 @@ a.next {
     width: 20%;
     margin-right: 3px;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 1s; 
+    
     
     
     
@@ -1257,6 +1258,7 @@ hr{
 
 
 
+
 @media screen and (max-width: 768px){
      /* _________burger___________ */
     #nav_container nav{
@@ -1401,6 +1403,7 @@ hr{
 
 
 
+
 @media screen and (min-width: 1024px) {
 
     .newsletter_margin{
@@ -1522,7 +1525,7 @@ hr{
 
 
  /*BLOCK MOD CLAUDIO FOR DESKOTP QUERY  */
- /*.block_contact ul {
+/*  .block_contact ul {
     list-style: none;
 }
 
@@ -1571,7 +1574,7 @@ ul#lista1 li {
             margin: 1rem;
             font-size: 2rem;
  
-       } 
-*/
+       } */ 
+
 /* BLOCK MOD CLAUDIO FOR DESKOTP QUERY  */
    
