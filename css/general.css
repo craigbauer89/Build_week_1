@@ -577,7 +577,6 @@ form, .form_group, #input_name, #input_email, #input_message {
 
 @media screen and (min-width: 768px) {
     #blog_background {
-        margin: 5px;
         grid-template-columns: repeat(2, 40%); 
 
     }
@@ -630,8 +629,10 @@ background-repeat:repeat, no-repeat;
  #blog_background h2 {
     text-transform: capitalize;
     font-weight: 400;
-    margin: 2.5rem auto;
     width: 80%;
+    padding-top:1em;
+    margin-bottom: 2.5rem;
+    margin: 0 auto;
  }
 
 #blog_background span {   
@@ -640,8 +641,8 @@ background-repeat:repeat, no-repeat;
 
 
 #blog_background hr {
-    width: 11em;
-margin-bottom: 2.5rem;
+width: 11em;
+margin-bottom: 0.7em ;
 border: 0;
 height: 1px;
 background-color: #c8c1b3;
@@ -661,7 +662,7 @@ background-color: #c8c1b3;
     height: 45em;
     display: grid;
     grid-template-columns: repeat(2, 50%); 
-    grid-template-rows: repeat(4, 33%);
+    grid-template-rows: repeat(3, 33%);
     box-sizing: border-box;
     overflow: hidden;
     padding: 3em;
