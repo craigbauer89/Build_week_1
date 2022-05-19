@@ -1,6 +1,3 @@
-
-
-
 @font-face {
     font-family: myfont;
     src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
@@ -16,9 +13,6 @@ body {
 
 }
 
-/*html {
-    width: 50%;
-}*/
 
 
 h2,
@@ -169,31 +163,20 @@ input#menu-btn{
     box-sizing: border-box
 }
 
-.reveal {
-    margin:  0 auto;
-    margin-top: 1rem;
-    width: 100%;
-   
-    padding: 1.8rem;
-}
-
 .title1 {
-    display: inline;
-    text-transform: uppercase;
-    /* justify-content: space-between; */ 
-    
-    font-weight:bold;
+    margin-left: 2rem;
+    display: flex;
+    margin-right:3rem;
+    justify-content: space-between;
     position:relative;
-    font-size: 20px;
-    margin-top:1rem;
-    
-   
+    font-size: 1rem;
+    margin-top: 0.5rem;
+
     
     
 }
 .title1 h3 {
-    font-size: 20px;
-   
+    font-size: 1.2rem;
 }
 
 
@@ -203,7 +186,7 @@ input#menu-btn{
     position: relative;
     margin: auto;
     display: block;
-   
+    font-size: 1.5rem;
     
     
 }
@@ -217,22 +200,7 @@ input#menu-btn{
     text-align: center;
     
 }
-.imgslide {
-    
-    width: 22%;
-    margin-right: 3px;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    
-    
-    
-    
-    
 
-
-}
 
     
 
@@ -247,15 +215,14 @@ input#menu-btn{
 .next {
 
     cursor: pointer;
-    
-      float: right;  
+    width: auto;
+     float: right; 
     color: #AA9D84;
-    /* font-weight: bold; */
-     font-size: 20px;
+    font-weight: bold;
+    font-size: 1rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     margin-top: 0.5rem;
-    margin-bottom: 0.80rem;;
     box-sizing: border-box;
     position: relative;
 }
@@ -269,8 +236,8 @@ span {
 
 
 a.next {
-   /*  margin-left: 10rem; */
-    
+
+    right: 0;
     border-radius: 3px 0 0 3px;
     
 
@@ -285,17 +252,45 @@ a.next {
     display: block;
 }
 
+
+
+
+/* Number text  */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 1.4rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+}
+
+.imgslide {
+    
+    width: 20%;
+    margin-right: 3px;
+    animation-fill-mode: forwards;
+    animation-delay: 1s; 
+    
+    
+    
+    
+    
+
+
+}
+
 /* The dots*/
 .dot {
     cursor: pointer;
-    height: 8px;
-    width: 8px;
+    height: 5px;
+    width: 5px;
     margin: 0 auto;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     
 }
 
@@ -367,18 +362,10 @@ a.next {
     
 }
 
-/*.footer {
+.footer {
     width: 100%;
     padding: 90px;
     
-}*/
-
-.footer div {
-    border: 2px solid black;
-}
-
-footer {
-    border: 2px solid black;
 }
 
 .footer h3, h4 {
@@ -412,12 +399,11 @@ footer {
 
 .contact_us {
     padding: 2rem;
-    
 }
 
 #button_container {
+    padding: 20px 80px;
     width: 100%;
-    padding: 10px 80px;
     background: #FF4F02;
     color: #fff;
     font-weight: 600;
@@ -466,8 +452,6 @@ form, .form_group, #input_name, #input_email, #input_message {
     width: 100%;
 }
 
-
-
 #button_contact {
     background: #FF4F02;
     margin-top: 0.95rem;
@@ -510,81 +494,34 @@ form, .form_group, #input_name, #input_email, #input_message {
     
 }
 
-.border_f:hover {
+.footer .box_media .border_f ul li a:hover {
     background: #FF4F02;
     color: #fff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
     .info_box ul li {
     display: inline-block
             
     }
-   
 }
 
-.box_contact {
-    display: flex;
-    text-align: center;
-    width: 100%;
-    justify-content: space-between;
-        
-}
-
-#button_container {
-    width: 510px;
-    height: 50px;
-    padding: 15px 80px;
-    font-weight: 500;
-        
-        
-}
-
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 990px) {
     
    
-    .footer {
-        display: flex;
-        padding: 3%;
-        padding-top: 4%;
-        padding-bottom: 10%;
-        justify-content: space-evenly;
-        
-    }
     
-    .box_contact {
-        display: inline;
-    }
-
-    .box_media {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .box_media .gallery ul  {
-        display: inline-block;
-        margin: 1.3rem;
-        
-    } 
-
-    .border_f {
-            display: inline;
-            text-align: center;
-    }
-
-    .social{
-        margin-top: 0.8rem;
-        font-size: 0.3;
-        text-align: center;
-    }
     
     /*.block_contact ul {
         list-style: none;
-    }*/
+    }
     
-   
-    /*
+    .block_contact {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
     .box_contact{ 
         text-align: center;
         margin: 1.3rem;
@@ -641,11 +578,9 @@ form, .form_group, #input_name, #input_email, #input_message {
 @media screen and (min-width: 768px) {
     #blog_background {
         margin: 5px;
+        width: 90%;
         grid-template-columns: repeat(2, 40%); 
 
-    }
-    #piatti {
-        width: 90%;
     }
        
 
@@ -671,7 +606,8 @@ background-image: url(../images/overlay-pattern.png), url(../images/blog/blog-bg
 display:block;
 /* background-size: cover;
  */
-background-repeat:repeat, no-repeat;
+padding-top: 3em;
+background-repeat:repeat,no-repeat;
 
 /* background-attachment: fixed,fixed;
  */
@@ -1189,14 +1125,6 @@ background-color: #c8c1b3;
 }
 
 @media screen and (min-width: 1024px) {
-    .title1 h3 {
-            margin-left: 3.6rem;
-    
-        }
-    
-        .title1 a {
-            margin-right: 3rem;
-        }
 
     .menu {
         margin: 8%;
@@ -1425,17 +1353,8 @@ background-color: #c8c1b3;
     }
     input#menu-btn:checked~nav{
         height: 18em;
-    }/* ____________________________ */
-        .title1 h3 {
-            margin-left: 3rem;
-    
-        }
-    
-        .title1 a {
-            margin-right: 2.5rem;
-        }
-    
-       
+    }
+    /* ____________________________ */
  }
  @media screen and (min-width: 992px) and (max-width: 1200px) {
     /* _________burger___________ */
@@ -1450,33 +1369,8 @@ background-color: #c8c1b3;
         margin-left: 0.6em;
     }
     /* ____________________________ */
-        .title1 h3 {
-            margin-left: 3rem;
-    
-        }
-    
-        .title1 a {
-            margin-right: 2.5rem;
-        }
    }
 
-
- 
-   @media screen and (min-width: 768px) {
-    .title1 h3 {
-            margin-left: 2rem;
-    
-        }
-    
-        .title1 a {
-            margin-right: 1.2rem;
-
-/* _________burger___________ */
-
-    #nav_container nav a{
-        display: inline-block;
-        margin-left: 1em;
-    }
    @media screen and (min-width: 1200px){
     /* _________burger___________ */
     #nav_container{
@@ -1488,7 +1382,6 @@ background-color: #c8c1b3;
     }
     /* ____________________________ */
    }
-}
 
    @media screen and (min-width: 768px) and (max-width: 992px) {
 
@@ -1700,6 +1593,14 @@ background-color: #c8c1b3;
     
     }
 
+    .footer {
+        display: flex;
+        padding: 3%;
+        padding-top: 4%;
+        padding-bottom: 10%;
+        justify-content: space-evenly;
+        
+    }
     
     .box_contact {
         display: inline;
@@ -1725,14 +1626,6 @@ background-color: #c8c1b3;
         margin-top: 0.8rem;
         font-size: 0.3;
         text-align: center;
-    }
-    .title1 h3 {
-        margin-left:3.6rem;
-
-    }
-
-    .title1 a {
-        margin-right: 2.5rem;
     }
 
 
