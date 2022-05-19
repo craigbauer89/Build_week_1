@@ -10,6 +10,7 @@ body {
     font-weight: 400;
     margin: 0 auto;
     line-height: 1.4em;
+    width: 100%;
 
 
 }
@@ -177,12 +178,12 @@ input#menu-btn {
 }
 
 .title1 {
-    margin-left: 2rem;
+    margin-left: 4.4rem;
     display: flex;
-    margin-right: 3rem;
+    margin-right: 9rem;
     justify-content: space-between;
     position: relative;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 0.5rem;
 
 
@@ -190,7 +191,7 @@ input#menu-btn {
 }
 
 .title1 h3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 
@@ -1067,10 +1068,7 @@ div .blogbutton {
 @media screen and (max-width: 768px) {
 
     /* carousel */
-    .imgslide {
-        margin-right: -8px;
-
-    }
+    
 }
 
 
@@ -1078,7 +1076,24 @@ div .blogbutton {
 
 
 @media screen and (min-width: 768px) {
+    /* carusellloooo  */   
+    .imgslide {
+        margin-right: -8px;
 
+    }
+        .title1 {
+            margin-left: 4.4rem;
+            display: flex;
+            margin-right: 9rem;
+            justify-content: space-between;
+            position: relative;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+    
+    
+    
+        }
+       /*  carusellooooo */
     .menu {
         margin: 8%;
 
@@ -1159,6 +1174,26 @@ div .blogbutton {
 }
 
 @media screen and (min-width: 1024px) {
+    /* carusellloooo  */
+        .imgslide {
+            margin-right: -8px;
+    
+        }
+    
+        .title1 {
+            margin-left: 4.4rem;
+            display: flex;
+            margin-right: 9rem;
+            justify-content: space-between;
+            position: relative;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+    
+    
+    
+        }
+    
+        /*  carusellooooo */
 
     .menu {
         margin: 8%;
@@ -1365,6 +1400,26 @@ div .blogbutton {
 
 
 @media screen and (max-width: 768px) {
+    /* carusellloooo  */
+        .imgslide {
+            margin-right: -8px;
+    
+        }
+    
+        .title1 {
+            margin-left: 2.6rem;
+            display: flex;
+            margin-right: 4rem;
+            justify-content: space-between;
+            position: relative;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+    
+    
+    
+        }
+    
+        /*  carusellooooo */
 
     /* _________burger___________ */
     #nav_container nav {
@@ -1402,7 +1457,26 @@ div .blogbutton {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+/* carusellloooo  */
+    .imgslide {
+        margin-right: -8px;
 
+    }
+
+    .title1 {
+        margin-left: 4.4rem;
+        display: flex;
+        margin-right: 9rem;
+        justify-content: space-between;
+        position: relative;
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+
+
+
+    }
+
+    /*  carusellooooo */
     /* _________burger___________ */
     #nav_container {
         width: 950px;
@@ -1421,6 +1495,26 @@ div .blogbutton {
 }
 
 @media screen and (min-width: 1200px) {
+    /* carusellloooo  */
+        .imgslide {
+            margin-right: -8px;
+    
+        }
+    
+        .title1 {
+            margin-left: 4.4rem;
+            display: flex;
+            margin-right: 9rem;
+            justify-content: space-between;
+            position: relative;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+    
+    
+    
+        }
+    
+        /*  carusellooooo */
 
     /* _________burger___________ */
     #nav_container {
@@ -1435,7 +1529,26 @@ div .blogbutton {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+/* carusellloooo  */
+    .imgslide {
+        margin-right: -8px;
 
+    }
+
+    .title1 {
+        margin-left: 2.8rem;
+        display: flex;
+        margin-right: 5rem;
+        justify-content: space-between;
+        position: relative;
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+
+
+
+    }
+
+    /*  carusellooooo */
     /* _________burger___________ */
 
     #nav_container nav a {
@@ -1467,6 +1580,26 @@ div .blogbutton {
 }
 
 @media screen and (min-width: 768px) {
+    /* carusellloooo  */
+        .imgslide {
+            margin-right: -8px;
+    
+        }
+    
+        .title1 {
+            margin-left: 2.8rem;
+            display: flex;
+            margin-right: 5rem;
+            justify-content: space-between;
+            position: relative;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+    
+    
+    
+        }
+    
+        /*  carusellooooo */
     h2 {
         font-size: 2.2rem;
     }
@@ -1571,6 +1704,26 @@ div .blogbutton {
 
 
 @media screen and (min-width: 1024px) {
+    /* carusellloooo  */
+        .imgslide {
+            margin-right: -8px;
+    
+        }
+    
+        .title1 {
+            margin-left: 4.2rem;
+            display: flex;
+            margin-right: 9rem;
+            justify-content: space-between;
+            position: relative;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+    
+    
+    
+        }
+    
+        /*  carusellooooo */
 
     .newsletter_margin {
         margin: 10%;
