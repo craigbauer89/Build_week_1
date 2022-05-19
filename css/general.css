@@ -1015,6 +1015,11 @@ hr{
 
 @media screen and (min-width: 768px) {
 
+    .menu {
+        margin: 8%;
+       
+    }
+
     .item_price {
         display: flex;
         justify-content: space-between;
@@ -1090,6 +1095,11 @@ hr{
 
 @media screen and (min-width: 1024px) {
 
+    .menu {
+        margin: 8%;
+       
+    }
+
     .item_price {
         display: flex;
         justify-content: space-between;
@@ -1101,28 +1111,28 @@ hr{
 
     .item_price .pancakes {
         /* border-bottom: 1px dotted rgb(96, 89, 50); */
-        width: 91%;
+        width: 86%;
         /* text-align: right; */
     }
     
     .item_price .pot_pie {
-        width: 86%;
+        width: 78%;
     }
     
     .item_price .cereal {
-        width: 86%;
+        width: 77.5%;
     }
     
     .item_price .skewers {
-        width: 91%;
+        width: 86%;
     }
     
     .item_price .steak {
-        width: 80%;
+        width: 67%;
     }
     
     .item_price .salad {
-        width: 93%;
+        width: 88.5%;
     }
     
     .item_price div:nth-child(2) {
@@ -1177,14 +1187,38 @@ hr{
 
 .newsletter {
     background: url(../images/subscribe-bg.jpg) no-repeat fixed 0;
+    /* background: url(overlay-pattern2.png) repeat; */
     background-size: cover;
 }
+
+.newsletter:after {
+    background: url(../images/overlay-pattern.png) #000000; ;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .3;
+    z-index:0;
+
+}
+
+.newsletter {
+    position:relative;
+}
+
 
 .newsletter_inner {
     padding-top: 15%;
     padding-bottom: 15%;
     color: white;
     font-size: 1.5rem;
+    background-image: none;
+    position:relative;
+    z-index:1;
+ 
 }
 
 
@@ -1291,6 +1325,14 @@ hr{
     }
     /* ____________________________ */
  }
+ @media screen and (min-width: 992px){
+    /* _________burger___________ */
+    #nav_container{
+        width: 980px;
+    }
+    /* ____________________________ */
+   }
+
 
  @media screen and (min-width: 768px) {
 
@@ -1306,7 +1348,7 @@ hr{
     #nav_container{
         padding-right: 1rem;
         padding-bottom: 0.6rem;
-        width: 93%;
+        width: 710px;
     }
      #nav_container img{
         margin-left: -0.9rem;
