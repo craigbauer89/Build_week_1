@@ -168,15 +168,15 @@ input#menu-btn{
     display: flex;
     margin-right:3rem;
     justify-content: space-between;
-    position: relative;
-    font-size: 1.5rem;
+    position:relative;
+    font-size: 1rem;
     margin-top: 0.5rem;
 
     
     
 }
 .title1 h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 
@@ -222,7 +222,7 @@ input#menu-btn{
     font-size: 1rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    margin-top: 1.2rem;
+    margin-top: 0.5rem;
     box-sizing: border-box;
     position: relative;
 }
@@ -270,7 +270,8 @@ a.next {
     width: 20%;
     margin-right: 3px;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 1s; 
+    
     
     
     
@@ -375,7 +376,7 @@ a.next {
 
 footer {
     text-transform: uppercase;
-    width: 90%;
+    width: 100%;
     list-style: none;
 }
 
@@ -476,6 +477,28 @@ form, .form_group, #input_name, #input_email, #input_message {
     display: inline-block;
 }
 
+.border_f { 
+    background-color: #a7a5a5;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 15px!important;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 100%;
+    background: #B0B0B0;
+    color: #FFFFFF;
+    transition: .3s all;
+    
+}
+
+.footer .box_media .border_f ul li a:hover {
+    background: #FF4F02;
+    color: #fff;
+}
+
 @media screen and (min-width: 768px) and (max-width: 990px) {
     .info_box ul li {
     display: inline-block
@@ -573,19 +596,22 @@ form, .form_group, #input_name, #input_email, #input_message {
 
 
 
+}
 
+ 
  
 
 #blog_background {
-background-image: url(../images/overlay-pattern.png), url(../images/blog/blog-bg.jpg);    
+background-image: url(../images/overlay-pattern.png), url(../images/blog/blog-bg.jpg);     
 display:block;
 background-size: cover;
 padding-top: 3em;
-background-repeat:repeat, no-repeat;
-background-attachment: fixed, fixed;
+background-repeat:repeat,no-repeat;
+background-attachment: fixed,fixed;
+/* position: fixed; */
 }
 
-/*   #blog_background::before{
+/*  #blog_background::before{
     content: "";
     position:relative;
     top: 0;
@@ -1016,6 +1042,11 @@ background-color: #c8c1b3;
 
 @media screen and (min-width: 768px) {
 
+    .menu {
+        margin: 8%;
+       
+    }
+
     .item_price {
         display: flex;
         justify-content: space-between;
@@ -1091,6 +1122,11 @@ background-color: #c8c1b3;
 
 @media screen and (min-width: 1024px) {
 
+    .menu {
+        margin: 8%;
+       
+    }
+
     .item_price {
         display: flex;
         justify-content: space-between;
@@ -1102,28 +1138,28 @@ background-color: #c8c1b3;
 
     .item_price .pancakes {
         /* border-bottom: 1px dotted rgb(96, 89, 50); */
-        width: 91%;
+        width: 86%;
         /* text-align: right; */
     }
     
     .item_price .pot_pie {
-        width: 86%;
+        width: 78%;
     }
     
     .item_price .cereal {
-        width: 86%;
+        width: 77.5%;
     }
     
     .item_price .skewers {
-        width: 91%;
+        width: 86%;
     }
     
     .item_price .steak {
-        width: 80%;
+        width: 67%;
     }
     
     .item_price .salad {
-        width: 93%;
+        width: 88.5%;
     }
     
     .item_price div:nth-child(2) {
@@ -1178,14 +1214,38 @@ background-color: #c8c1b3;
 
 .newsletter {
     background: url(../images/subscribe-bg.jpg) no-repeat fixed 0;
+    /* background: url(overlay-pattern2.png) repeat; */
     background-size: cover;
 }
+
+.newsletter:after {
+    background: url(../images/overlay-pattern.png) #000000; ;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .3;
+    z-index:0;
+
+}
+
+.newsletter {
+    position:relative;
+}
+
 
 .newsletter_inner {
     padding-top: 15%;
     padding-bottom: 15%;
     color: white;
     font-size: 1.5rem;
+    background-image: none;
+    position:relative;
+    z-index:1;
+ 
 }
 
 
@@ -1262,6 +1322,7 @@ background-color: #c8c1b3;
 
 
 
+
 @media screen and (max-width: 768px){
      /* _________burger___________ */
     #nav_container nav{
@@ -1291,30 +1352,66 @@ background-color: #c8c1b3;
     }
     /* ____________________________ */
  }
-
- @media screen and (min-width: 768px) {
-
-/* _________burger___________ */
-
-    #nav_container nav a{
-        display: inline-block;
-        margin-left: 1em;
+ @media screen and (min-width: 992px) and (max-width: 1200px) {
+    /* _________burger___________ */
+    #nav_container{
+        width: 950px;
+        padding-right: 4em;
     }
+       #nav_container label{
+        display: none;
+    }
+    #nav_container nav a{
+        margin-left: 0.6em;
+    }
+    /* ____________________________ */
+   }
+
+   @media screen and (min-width: 1200px){
+    /* _________burger___________ */
+    #nav_container{
+        width: 1150px;
+    }
+
     #nav_container label{
         display: none;
     }
-    #nav_container{
-        padding-right: 1rem;
-        padding-bottom: 0.6rem;
-        width: 93%;
+    /* ____________________________ */
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* _________burger___________ */
+    
+        #nav_container nav a{
+            display: inline-block;
+            margin-left: 1em;
+        }
+        #nav_container label{
+            display: none;
+        }
+        #nav_container{
+            padding-right: 1rem;
+            padding-bottom: 0.6rem;
+            width: 710px;
+        }
+         #nav_container img{
+            margin-left: -0.9rem;
+        }
+       #nav_container a{
+            margin: 0 0.7rem 0.8rem;
+        }
+    /* __________________________ */ 
+
+        
     }
-     #nav_container img{
-        margin-left: -0.9rem;
+ @media screen and (min-width: 768px) {
+    h2{
+        font-size: 2.2rem;
     }
-   #nav_container a{
-        margin: 0 0.7rem 0.8rem;
+    h2 span{
+        font-size: 2.8rem;
     }
-/* __________________________ */  
     .newsletter_margin{
         margin: 10 0;
     }
@@ -1406,6 +1503,7 @@ background-color: #c8c1b3;
 
 
 
+
 @media screen and (min-width: 1024px) {
 
     .newsletter_margin{
@@ -1493,9 +1591,10 @@ background-color: #c8c1b3;
 
     .footer {
         display: flex;
-        padding: 15%;
-        padding-top: 3%;
+        padding: 3%;
+        padding-top: 4%;
         padding-bottom: 10%;
+        justify-content: space-evenly;
         
     }
     
@@ -1505,6 +1604,7 @@ background-color: #c8c1b3;
 
     .box_media {
         display: flex;
+        flex-direction: column;
     }
 
     .box_media .gallery ul  {
@@ -1512,6 +1612,17 @@ background-color: #c8c1b3;
         margin: 1.3rem;
         
     } 
+
+    .border_f {
+            display: inline;
+            text-align: center;
+    }
+
+    .social{
+        margin-top: 0.8rem;
+        font-size: 0.3;
+        text-align: center;
+    }
 
 
     
@@ -1527,7 +1638,7 @@ background-color: #c8c1b3;
 
 
  /*BLOCK MOD CLAUDIO FOR DESKOTP QUERY  */
- /*.block_contact ul {
+/*  .block_contact ul {
     list-style: none;
 }
 
@@ -1576,7 +1687,6 @@ ul#lista1 li {
             margin: 1rem;
             font-size: 2rem;
  
-       } 
-*/
+       } */ 
+
 /* BLOCK MOD CLAUDIO FOR DESKOTP QUERY  */
-   
