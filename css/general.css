@@ -477,6 +477,28 @@ form, .form_group, #input_name, #input_email, #input_message {
     display: inline-block;
 }
 
+.border_f { 
+    background-color: #a7a5a5;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 15px!important;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 100%;
+    background: #B0B0B0;
+    color: #FFFFFF;
+    transition: .3s all;
+    
+}
+
+.footer .box_media .border_f ul li a:hover {
+    background: #FF4F02;
+    color: #fff;
+}
+
 @media screen and (min-width: 768px) and (max-width: 990px) {
     .info_box ul li {
     display: inline-block
@@ -1473,7 +1495,7 @@ hr{
     .footer {
         display: flex;
         padding: 15%;
-        padding-top: 3%;
+        padding-top: 4%;
         padding-bottom: 10%;
         
     }
