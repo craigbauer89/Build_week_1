@@ -169,14 +169,14 @@ input#menu-btn{
     margin-right:3rem;
     justify-content: space-between;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
 
     
     
 }
 .title1 h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 
@@ -222,7 +222,7 @@ input#menu-btn{
     font-size: 1rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    margin-top: 1.2rem;
+    margin-top: 0.5rem;
     box-sizing: border-box;
     position: relative;
 }
@@ -376,7 +376,7 @@ a.next {
 
 footer {
     text-transform: uppercase;
-    width: 90%;
+    width: 100%;
     list-style: none;
 }
 
@@ -477,6 +477,28 @@ form, .form_group, #input_name, #input_email, #input_message {
     display: inline-block;
 }
 
+.border_f { 
+    background-color: #a7a5a5;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 15px!important;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 100%;
+    background: #B0B0B0;
+    color: #FFFFFF;
+    transition: .3s all;
+    
+}
+
+.footer .box_media .border_f ul li a:hover {
+    background: #FF4F02;
+    color: #fff;
+}
+
 @media screen and (min-width: 768px) and (max-width: 990px) {
     .info_box ul li {
     display: inline-block
@@ -572,17 +594,20 @@ form, .form_group, #input_name, #input_email, #input_message {
 
 }
 
-
+ 
  
 
 #blog_background {
-background: url(../images/blog/blog-bg.jpg) no-repeat fixed 0;    
+background-image: url(../images/overlay-pattern.png), url(../images/blog/blog-bg.jpg);     
 display:block;
 background-size: cover;
 padding-top: 3em;
+background-repeat:repeat,no-repeat;
+background-attachment: fixed,fixed;
+/* position: fixed; */
 }
 
-/* #blog_background::before{
+/*  #blog_background::before{
     content: "";
     position:absolute;
     top: 0;
@@ -590,8 +615,8 @@ padding-top: 3em;
     bottom: 0;
     right: 0;
     background: url(../images/overlay-pattern.png), #000000 no-repeat fixed 0;
-    opacity: 0.3;
-}   */
+    opacity: 0.3; */
+
 
 #blog_background span {   
      font-weight: bold;
@@ -1503,9 +1528,10 @@ hr{
 
     .footer {
         display: flex;
-        padding: 15%;
-        padding-top: 3%;
+        padding: 3%;
+        padding-top: 4%;
         padding-bottom: 10%;
+        justify-content: space-evenly;
         
     }
     
@@ -1515,6 +1541,7 @@ hr{
 
     .box_media {
         display: flex;
+        flex-direction: column;
     }
 
     .box_media .gallery ul  {
@@ -1522,6 +1549,17 @@ hr{
         margin: 1.3rem;
         
     } 
+
+    .border_f {
+            display: inline;
+            text-align: center;
+    }
+
+    .social{
+        margin-top: 0.8rem;
+        font-size: 0.3;
+        text-align: center;
+    }
 
 
     
