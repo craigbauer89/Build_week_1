@@ -363,23 +363,33 @@ a.next {
 
 .footer {
     width: 100%;
+    padding: 90px;
     
 }
 
 .footer h3, h4 {
     text-align: left;
     color: #FF4F02;
+    font-size: 19px;
 }
 
 .footer, footer {
     text-transform: uppercase;
     width: 90%;
-    margin: 0 auto;
     list-style: none;
 }
 
 .footer, footer {
    display: block;
+}
+
+footer {
+    
+    color: #454545;
+    background-color: #c7c7c7;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .gallery ul li, .link_social ul li{
@@ -458,6 +468,12 @@ form, .form_group, #input_name, #input_email, #input_message {
     touch-action: manipulation;
     cursor: pointer;
     user-select: none;
+
+}
+
+.footer ul {
+    list-style: none;
+    display: inline-block;
 }
 
 @media screen and (min-width: 768px) and (max-width: 990px) {
@@ -468,7 +484,11 @@ form, .form_group, #input_name, #input_email, #input_message {
 }
 
 @media screen and (min-width: 990px) {
-    .block_contact ul {
+    
+   
+    
+    
+    /*.block_contact ul {
         list-style: none;
     }
     
@@ -521,10 +541,10 @@ form, .form_group, #input_name, #input_email, #input_message {
                 font-size: 2rem;
      
            } 
-}
+
 
 /* BLOG */
-
+}
 
 @media screen and (min-width: 1024px) {
     #piatti {
@@ -1216,9 +1236,9 @@ hr{
 /* FOOTER */
 
 
-}
 
- @media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px){
      /* _________burger___________ */
     #nav_container nav{
         height: 0;
@@ -1359,10 +1379,10 @@ hr{
  
 
     
-}
 
 
- @media screen and (min-width: 1024px) {
+
+@media screen and (min-width: 1024px) {
 
     .newsletter_margin{
         margin: 10%;
@@ -1447,7 +1467,29 @@ hr{
     
     }
 
+    .footer {
+        display: flex;
+        padding: 15%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        
+    }
+    
+    .box_contact {
+        display: inline;
+    }
+
+
+    .blog_box, .box_media {
+        margin-left: 20%;
+    }
+
+    
+
+
 }
+
+
 
 /* NEWS */
 
