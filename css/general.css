@@ -604,11 +604,15 @@ form, .form_group, #input_name, #input_email, #input_message {
 #blog_background {
 background-image: url(../images/overlay-pattern.png), url(../images/blog/blog-bg.jpg);     
 display:block;
-background-size: cover;
+/* background-size: cover;
+ */
 padding-top: 3em;
 background-repeat:repeat,no-repeat;
-background-attachment: fixed,fixed;
-/* position: fixed; */
+
+/* background-attachment: fixed,fixed;
+ */
+ 
+ /* position: fixed; */
 }
 
 /*  #blog_background::before{
