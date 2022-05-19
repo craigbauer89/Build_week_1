@@ -270,7 +270,8 @@ a.next {
     width: 20%;
     margin-right: 3px;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 1s; 
+    
     
     
     
@@ -1216,7 +1217,7 @@ hr{
 /* FOOTER */
 
 
-}
+
 
  @media screen and (max-width: 768px){
      /* _________burger___________ */
@@ -1359,7 +1360,7 @@ hr{
  
 
     
-}
+
 
 
  @media screen and (min-width: 1024px) {
@@ -1455,7 +1456,7 @@ hr{
 
 
  /*BLOCK MOD CLAUDIO FOR DESKOTP QUERY  */
- /*.block_contact ul {
+/*  .block_contact ul {
     list-style: none;
 }
 
@@ -1504,7 +1505,7 @@ ul#lista1 li {
             margin: 1rem;
             font-size: 2rem;
  
-       } 
-*/
+       } */ 
+
 /* BLOCK MOD CLAUDIO FOR DESKOTP QUERY  */
    
