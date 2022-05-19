@@ -1,3 +1,6 @@
+
+
+
 @font-face {
     font-family: myfont;
     src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
@@ -162,20 +165,31 @@ input#menu-btn{
     box-sizing: border-box
 }
 
-.title1 {
-    margin-left: 2rem;
-    display: flex;
-    margin-right:3rem;
-    justify-content: space-between;
-    position:relative;
-    font-size: 1rem;
-    margin-top: 0.5rem;
+.reveal {
+    margin:  0 auto;
+    margin-top: 1rem;
+    width: 100%;
+   
+    padding: 1.8rem;
+}
 
+.title1 {
+    display: inline;
+    text-transform: uppercase;
+    /* justify-content: space-between; */ 
+    
+    font-weight:bold;
+    position:relative;
+    font-size: 20px;
+    margin-top:1rem;
+    
+   
     
     
 }
 .title1 h3 {
-    font-size: 1.2rem;
+    font-size: 20px;
+   
 }
 
 
@@ -185,7 +199,7 @@ input#menu-btn{
     position: relative;
     margin: auto;
     display: block;
-    font-size: 1.5rem;
+   
     
     
 }
@@ -199,7 +213,22 @@ input#menu-btn{
     text-align: center;
     
 }
+.imgslide {
+    
+    width: 22%;
+    margin-right: 3px;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    
+    
+    
+    
+    
 
+
+}
 
     
 
@@ -214,14 +243,15 @@ input#menu-btn{
 .next {
 
     cursor: pointer;
-    width: auto;
-     float: right; 
+    
+      float: right;  
     color: #AA9D84;
-    font-weight: bold;
-    font-size: 1rem;
+    /* font-weight: bold; */
+     font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     margin-top: 0.5rem;
+    margin-bottom: 0.80rem;;
     box-sizing: border-box;
     position: relative;
 }
@@ -235,8 +265,8 @@ span {
 
 
 a.next {
-
-    right: 0;
+   /*  margin-left: 10rem; */
+    
     border-radius: 3px 0 0 3px;
     
 
@@ -251,45 +281,17 @@ a.next {
     display: block;
 }
 
-
-
-
-/* Number text  */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 1.4rem;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-
-}
-
-.imgslide {
-    
-    width: 20%;
-    margin-right: 3px;
-    animation-fill-mode: forwards;
-    animation-delay: 1s; 
-    
-    
-    
-    
-    
-
-
-}
-
 /* The dots*/
 .dot {
     cursor: pointer;
-    height: 5px;
-    width: 5px;
+    height: 8px;
+    width: 8px;
     margin: 0 auto;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     
 }
 
@@ -398,11 +400,12 @@ footer {
 
 .contact_us {
     padding: 2rem;
+    text-align: center;
 }
 
 #button_container {
-    padding: 20px 80px;
     width: 100%;
+    padding: 10px 80px;
     background: #FF4F02;
     color: #fff;
     font-weight: 600;
@@ -451,6 +454,8 @@ form, .form_group, #input_name, #input_email, #input_message {
     width: 100%;
 }
 
+
+
 #button_contact {
     background: #FF4F02;
     margin-top: 0.95rem;
@@ -493,34 +498,81 @@ form, .form_group, #input_name, #input_email, #input_message {
     
 }
 
-.footer .box_media .border_f ul li a:hover {
+.border_f:hover {
     background: #FF4F02;
     color: #fff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 990px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .info_box ul li {
     display: inline-block
             
     }
+   
 }
 
-@media screen and (min-width: 990px) {
+.box_contact {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+        
+}
+
+#button_container {
+    width: 510px;
+    height: 50px;
+    padding: 15px 80px;
+    font-weight: 500;
+        
+        
+}
+
+
+@media screen and (min-width: 992px) {
     
    
+    .footer {
+        display: flex;
+        padding: 3%;
+        padding-top: 4%;
+        padding-bottom: 10%;
+        justify-content: space-evenly;
+        
+    }
     
+    .box_contact {
+        display: inline;
+    }
+
+    .box_media {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box_media .gallery ul  {
+        display: inline-block;
+        margin: 1.3rem;
+        
+    } 
+
+    .border_f {
+            display: inline;
+            text-align: center;
+    }
+
+    .social{
+        margin-top: 0.8rem;
+        font-size: 0.3;
+        text-align: center;
+    }
     
     /*.block_contact ul {
         list-style: none;
-    }
+    }*/
     
-    .block_contact {
-        display: flex;
-        text-align: center;
-        width: 100%;
-        justify-content: space-between;
-        
-    }
+   
+    /*
     .box_contact{ 
         text-align: center;
         margin: 1.3rem;
@@ -561,34 +613,39 @@ form, .form_group, #input_name, #input_email, #input_message {
      
            } 
 
+}
 
 /* BLOG */
-}
 
 @media screen and (min-width: 1024px) {
     #piatti {
      width: 90%;
  }
     
-#blog_cont_background #piatti {
-       width: 95%;
-       display: grid;
+
 }
+
+
+@media screen and (min-width: 768px) {
+    #blog_background {
+        grid-template-columns: repeat(2, 40%); 
+
+    }
+    #piatti {
+        width: 90%;
+    }
+       
+
+
 }
 
 @media screen and (max-width: 768px) {
-    #blog_cont_background #piatti {
-        width: 95%;
-        display: grid;
-        grid-template-columns: 1, 100%; 
-        grid-template-rows: repeat(6, 100%);
- }
+
           
 }
 
 
 
-@media screen and (min-width: 768px) {
 
 
 }
@@ -599,50 +656,64 @@ form, .form_group, #input_name, #input_email, #input_message {
 #blog_background {
 background-image: url(../images/overlay-pattern.png), url(../images/blog/blog-bg.jpg);     
 display:block;
-background-size: cover;
-padding-top: 3em;
-background-repeat:repeat,no-repeat;
-background-attachment: fixed,fixed;
-/* position: fixed; */
+/* background-size: cover;
+ */
+background-repeat:repeat, no-repeat;
+
+/* background-attachment: fixed,fixed;
+ */
+ 
+ /* position: fixed; */
 }
 
 /*  #blog_background::before{
     content: "";
-    position:absolute;
+    position:relative;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     background: url(../images/overlay-pattern.png), #000000 no-repeat fixed 0;
-    opacity: 0.3; */
-
+/*     opacity: 0.3;
+ */  
+ 
+ #blog_background h2 {
+    text-transform: capitalize;
+    font-weight: 400;
+    width: 80%;
+    padding-top:1em;
+    margin-bottom: 2.5rem;
+    margin: 0 auto;
+ }
 
 #blog_background span {   
      font-weight: bold;
 }
 
-.blogpar p {
-    color: grey;
+
+#blog_background hr {
+width: 11em;
+margin-bottom: 0.7em ;
+border: 0;
+height: 1px;
+background-color: #c8c1b3;
 }
 
-
-hr{
+#piatti hr{
     width: 20%;
-    margin: 0 auto;
-    margin-top: 3em;
-    margin-bottom: 2em;
-    color: white;
+    margin: 1em auto;
+
 }
 
 #piatti {
 /*     background-color: white;
  */  
-    margin: 0 auto;
-    width: 80%;
+    margin: 5rem auto;
+    width: 100%;
     height: 45em;
     display: grid;
     grid-template-columns: repeat(2, 50%); 
-    grid-template-rows: repeat(4, 33%);
+    grid-template-rows: repeat(3, 33%);
     box-sizing: border-box;
     overflow: hidden;
     padding: 3em;
@@ -659,15 +730,25 @@ hr{
     overflow: hidden;
 }
 
-.blogbox1 .blogpar {
+.blogimmagine {
+  z-index: 1; 
+  position: relative;
+}
+
+.blogpar {
     width: 50%;
-    height: 3em;
     float: right;
     padding: 1.6em;
     z-index: 2;
     vertical-align: middle;
-    
+    position: relative;
+    background-color: white;
 }
+    .blogpar p {
+    color: grey;
+    padding-bottom: 2.3em;
+    }
+
 
 .blogbox1 img {
  width: 50%;
@@ -701,26 +782,29 @@ hr{
 
 .blogbox2 {
     background-color: white;
-    z-index: 1;
+    z-index: 2;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-.blogbox2 .blogpar {
+/*  .blogbox2 .blogpar {
     width: 50%;
     height: 3em;
     float: right;
     padding: 1.6em;
     z-index: 2;
     vertical-align: middle;
-}
-
+} 
+ */
 .blogbox2 img {
  width: 50%;
+ height: auto;
  transition: 0.8s ease-out;
  box-sizing: border-box;
  overflow: hidden;
  z-index: 0;
+ float: left;
+
 }
     .blogbox2 img:hover {
         transform: rotate(5deg) scale(1.1) ;
@@ -736,18 +820,19 @@ hr{
 
     .blogbox3 {
         background-color: white;
-        z-index: 1;
+        z-index: 2;
         box-sizing: border-box;
         overflow: hidden;
     }
     
     .blogbox3 .blogpar {
         width: 50%;
-        height: 3em;
-        float: right;
+        height: auto;
+        float: left;
         padding: 1.6em;
         z-index: 2;
         vertical-align: middle;
+        position: relative;
     }
     
     .blogbox3 img {
@@ -771,19 +856,19 @@ hr{
 
         .blogbox4 {
             background-color: white;
-            z-index: 1;
+            z-index: 2;
             box-sizing: border-box;
             overflow: hidden;
-            border: 1px solid white;
         }
         
         .blogbox4 .blogpar {
             width: 50%;
-            height: 3em;
+            height: auto;
             float: left;
             padding: 1.6em;
             z-index: 2;
             vertical-align: middle;
+            position: relative;
         }
         
 
@@ -803,33 +888,34 @@ hr{
             box-sizing: border-box;
             overflow: hidden;
             z-index: 0;
-            margin-right:-25px;
+            margin-right:-15px;
 
             } 
 
 
             .blogbox5 {
                 background-color: white;
-                z-index: 1;
+                z-index: 2;
                 box-sizing: border-box;
                 overflow: hidden;
             }
             
-            .blogbox5 .blogpar {
+             .blogbox5 .blogpar {
                 width: 50%;
-                height: 3em;
-                float: left;
+                float: right;
                 padding: 1.6em;
                 z-index: 2;
                 vertical-align: middle;
-            }
+            } 
             
             .blogbox5 img {
-             width: 50%;
-             transition: 0.8s ease-out;
-             box-sizing: border-box;
-             overflow: hidden;
-             z-index: 0;
+                width: 50%;
+                height: auto;
+                transition: 0.8s ease-out;
+                box-sizing: border-box;
+                overflow: hidden;
+                z-index: 0;
+                float: left;
             }
                 .blogbox5 img:hover {
                 transform: rotate(5deg) scale(1.1) ;
@@ -846,26 +932,28 @@ hr{
         
                 .blogbox6 {
                     background-color: white;
-                    z-index: 1;
+                    z-index: 2;
                     box-sizing: border-box;
                     overflow: hidden;
                 }
                 
-                .blogbox6 .blogpar {
+/*                 .blogbox6 .blogpar {
                     width: 50%;
                     height: 3em;
                     float: right;
                     padding: 1.6em;
                     z-index: 2;
                     vertical-align: middle;
-                }
+                } */
                 
                 .blogbox6 img {
-                 width: 50%;
-                 transition: 0.8s ease-out;
-                 box-sizing: border-box;
-                 overflow: hidden;
-                 z-index: -1;
+                    width: 50%;
+                    height: auto;
+                    transition: 0.8s ease-out;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    z-index: 0;
+                    float: left;
                 }
                     .blogbox6 img:hover {
                         transform: rotate(5deg) scale(1.1) ;
@@ -879,16 +967,13 @@ hr{
                         margin-left:-15px;
                     }
 
-
-
-
  div .blogbutton{
         background-color: orangered;
         color: white;
         border:none;
         width:20%;
         height:75px;
-        margin-left: 70%;
+        margin-left: 78%;
         padding:  2rem 3rem ;
         text-align: center;
 }
@@ -898,7 +983,7 @@ hr{
         color: orangered;
         border-radius: 5%;
         animation-delay: 1200ms;
-    } 
+    }  
 
 /* BLOG */
 
@@ -1093,6 +1178,14 @@ hr{
 }
 
 @media screen and (min-width: 1024px) {
+    .title1 h3 {
+            margin-left: 3.6rem;
+    
+        }
+    
+        .title1 a {
+            margin-right: 3rem;
+        }
 
     .menu {
         margin: 8%;
@@ -1321,8 +1414,17 @@ hr{
     }
     input#menu-btn:checked~nav{
         height: 18em;
-    }
-    /* ____________________________ */
+    }/* ____________________________ */
+        .title1 h3 {
+            margin-left: 3rem;
+    
+        }
+    
+        .title1 a {
+            margin-right: 2.5rem;
+        }
+    
+       
  }
  @media screen and (min-width: 992px) and (max-width: 1200px) {
     /* _________burger___________ */
@@ -1337,8 +1439,33 @@ hr{
         margin-left: 0.6em;
     }
     /* ____________________________ */
+        .title1 h3 {
+            margin-left: 3rem;
+    
+        }
+    
+        .title1 a {
+            margin-right: 2.5rem;
+        }
    }
 
+
+ @media screen and (min-width: 768px) {
+    .title1 h3 {
+            margin-left: 2rem;
+    
+        }
+    
+        .title1 a {
+            margin-right: 1.2rem;
+        }
+
+/* _________burger___________ */
+
+    #nav_container nav a{
+        display: inline-block;
+        margin-left: 1em;
+    }
    @media screen and (min-width: 1200px){
     /* _________burger___________ */
     #nav_container{
@@ -1350,6 +1477,7 @@ hr{
     }
     /* ____________________________ */
    }
+}
 
    @media screen and (min-width: 768px) and (max-width: 992px) {
 
@@ -1561,14 +1689,6 @@ hr{
     
     }
 
-    .footer {
-        display: flex;
-        padding: 3%;
-        padding-top: 4%;
-        padding-bottom: 10%;
-        justify-content: space-evenly;
-        
-    }
     
     .box_contact {
         display: inline;
@@ -1594,6 +1714,14 @@ hr{
         margin-top: 0.8rem;
         font-size: 0.3;
         text-align: center;
+    }
+    .title1 h3 {
+        margin-left:3.6rem;
+
+    }
+
+    .title1 a {
+        margin-right: 2.5rem;
     }
 
 
