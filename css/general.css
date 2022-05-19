@@ -133,10 +133,6 @@ input#menu-btn{
 .nav_link:hover{
     text-decoration: none;
 }
-.nav_link.active{
-    text-decoration: none;
-    color: #FF4F02;
-}
 
 .nav_link:after{
     content: ""; 
@@ -153,7 +149,10 @@ input#menu-btn{
     display: block;
     opacity: 1;
 }
-.nav_link:active:after {
+.active_scroll{
+    text-decoration: none;
+}
+.active_scroll:after{
     display: block;
     opacity: 1;
 }
