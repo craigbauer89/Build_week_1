@@ -399,11 +399,12 @@ footer {
 
 .contact_us {
     padding: 2rem;
+    text-align: center;
 }
 
 #button_container {
-    padding: 20px 80px;
     width: 100%;
+    padding: 10px 80px;
     background: #FF4F02;
     color: #fff;
     font-weight: 600;
@@ -494,34 +495,79 @@ form, .form_group, #input_name, #input_email, #input_message {
     
 }
 
-.footer .box_media .border_f ul li a:hover {
+.border_f:hover {
     background: #FF4F02;
     color: #fff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 990px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .info_box ul li {
     display: inline-block
             
     }
-}
 
-@media screen and (min-width: 990px) {
-    
-   
-    
-    
-    /*.block_contact ul {
-        list-style: none;
-    }
-    
-    .block_contact {
+    .box_contact {
         display: flex;
         text-align: center;
         width: 100%;
         justify-content: space-between;
         
     }
+
+    #button_container {
+        width: 510px;
+        height: 50px;
+        padding: 15px 80px;
+        font-weight: 500;
+        
+        
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+   
+    .footer {
+        display: flex;
+        padding: 3%;
+        padding-top: 4%;
+        padding-bottom: 10%;
+        justify-content: space-evenly;
+        
+    }
+    
+    .box_contact {
+        display: inline;
+    }
+
+    .box_media {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box_media .gallery ul  {
+        display: inline-block;
+        margin: 1.3rem;
+        
+    } 
+
+    .border_f {
+            display: inline;
+            text-align: center;
+    }
+
+    .social{
+        margin-top: 0.8rem;
+        font-size: 0.3;
+        text-align: center;
+    }
+    
+    /*.block_contact ul {
+        list-style: none;
+    }*/
+    
+   
+    /*
     .box_contact{ 
         text-align: center;
         margin: 1.3rem;
@@ -1526,40 +1572,7 @@ hr{
     
     }
 
-    .footer {
-        display: flex;
-        padding: 3%;
-        padding-top: 4%;
-        padding-bottom: 10%;
-        justify-content: space-evenly;
-        
-    }
     
-    .box_contact {
-        display: inline;
-    }
-
-    .box_media {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .box_media .gallery ul  {
-        display: inline-block;
-        margin: 1.3rem;
-        
-    } 
-
-    .border_f {
-            display: inline;
-            text-align: center;
-    }
-
-    .social{
-        margin-top: 0.8rem;
-        font-size: 0.3;
-        text-align: center;
-    }
 
 
     
