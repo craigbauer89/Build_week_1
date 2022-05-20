@@ -183,7 +183,7 @@ input#menu-btn {
 .title1 h3 {
     font-size: 1.8rem;
 }
-
+/* HOME */
 
 /* Slide container */
 .slides_container {
@@ -201,7 +201,7 @@ input#menu-btn {
     margin-bottom: 4px;
     text-align: center;
 }
-
+/* Slide container */
 
 /* Next buttons */
 
@@ -1198,7 +1198,7 @@ form,
     
     /* BLOG */
     #blog_background {
-        box-sizing: none;
+        background-size: cover;
     }
 
     #piatti {
@@ -1236,6 +1236,11 @@ form,
 
     .container_contact h2 {
         font-size: xx-large;
+    } /*merge*/
+
+    div .blogbutton{
+        width: 30%;
+        margin-left: 7%;
     }
 
     footer {
@@ -1305,6 +1310,28 @@ form,
     }
 
     /* __________________________ */
+
+     /* ________BLOG__________________ */
+
+     #blog_background {
+        background-size: cover;
+    }
+
+    #piatti {
+    height: auto;
+    }
+
+
+
+    div .blogbutton {
+        width: 30%;
+        margin-left: 40%;
+    }
+
+
+     /* ________FINE BLOG__________________ */
+
+
 
     .box_info {
         display: flex;
