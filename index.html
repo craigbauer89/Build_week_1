@@ -10,7 +10,7 @@
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/general2.css">
+    <link rel="stylesheet" href="css/general3.css">
        
     <link rel="stylesheet" href="fonts/ufonts.com_tw-cen-mt.ttf">        
     <script src="https://kit.fontawesome.com/e57aa09383.js" crossorigin="anonymous"></script>    
@@ -20,29 +20,66 @@
       <div id="background_banner">
         <img src="images/header.jpg" alt="banner" />
       </div>
-      <div class="mySlides fade reveal">
-        <!-- "slideM" -->
-        <div class="imgslide" class="numbertext"></div>
-        <img class="imgslide" src="images/slider/slider-img-1.jpg">
-        <img class="imgslide" src="images/slider/slider-img-3.jpg">
-        <img class="imgslide  " src="images/slider/slider-img-2.jpg">
-        <img class="imgslide " src="images/slider/slider-img-4.jpg">
-      </div>
-      <div class="mySlides fade reveal">
-        <div class="numbertext"></div>
-        <img class="imgslide" src="images/slider/slider-img-2.jpg">
-        <img class="imgslide" src="images/slider/slider-img-4.jpg">
-        <img class="imgslide" src="images/slider/slider-img-3.jpg">
-        <img class="imgslide" src="images/slider/slider-img-1.jpg">
-      </div>
-      <div class="mySlides fade reveal">
-        <div class="numbertext"></div>
-        <img class="imgslide" src="images/slider/slider-img-3.jpg">
-        <img class="imgslide" src="images/slider/slider-img-2.jpg">
-        <img class="imgslide" src="images/slider/slider-img-4.jpg">
-        <img class="imgslide" src="images/slider/slider-img-1.jpg">
-      </div>
-    </div>
+    </header>
+    
+    <main>
+      
+      <div id="nav_container">
+        <img src="images/logo.png" alt="Logo" />
+        <label for="menu-btn"><i class="lni lni-menu"></i></label>
+        <input type="checkbox" name="menu-btn" id="menu-btn" />
+        <nav>
+          <a class="nav_link" href="#home">Home</a>
+          <a class="nav_link" href="#about_us">About us</a>
+          <a class="nav_link" href="#blog_background">Blog</a>
+          <a class="nav_link" href="#menu">Menu</a>
+          <a class="nav_link" href="#news">News</a>
+          <a class="nav_link" href="#contacts">Contacts</a>
+        </nav>
+        </div>
+      
+
+<div class="reveal active">
+  <div class="slides_container" id="home" class="reveal"></div>
+  <div class="title1">
+    <h3 class="title1">Featured <span>Works</span></h3><!-- Next  --><a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <div class="mySlides fade reveal">
+    <!-- "slideM" -->
+
+    
+    <img class="imgslide" src="images/slider/slider-img-1.jpg">
+    <img class="imgslide" src="images/slider/slider-img-3.jpg">
+    <img class="imgslide  " src="images/slider/slider-img-2.jpg">
+    <img class="imgslide " src="images/slider/slider-img-4.jpg">
+
+  </div>
+
+  <div class="mySlides fade reveal">
+
+    
+    <img class="imgslide" src="images/slider/slider-img-2.jpg">
+    <img class="imgslide" src="images/slider/slider-img-4.jpg">
+    <img class="imgslide" src="images/slider/slider-img-3.jpg">
+    <img class="imgslide" src="images/slider/slider-img-1.jpg">
+
+  </div>
+
+  <div class="mySlides fade reveal">
+    
+    <img class="imgslide" src="images/slider/slider-img-3.jpg">
+    <img class="imgslide" src="images/slider/slider-img-2.jpg">
+    <img class="imgslide" src="images/slider/slider-img-4.jpg">
+    <img class="imgslide" src="images/slider/slider-img-1.jpg">
+
+  </div>
+
+  
+  
+
+</div>
+    
 
 
     <!-- The dot -->
@@ -307,8 +344,10 @@
   </main>
 
   <section class="footer reveal">
+     
     <div class="box_contact reveal">
-      <h3>Contact <span>Info</span></h3>
+      <h3>Contact <span>Info</span></h3> 
+      <div class="box_info reveal"> 
       <div class="info_box reveal">
         <h4><i class="fa fa-phone"></i>Telefone</h4>
         <p>(000) 123 456 78- (000) 123 4567 89</p>
@@ -321,6 +360,7 @@
         <h4><i class="fa fa-envelope"></i>Email</h4>
         <p>rest@gmail.com - rest@mail.ru</p>
       </div>
+     </div> 
     </div>
     <div class="blog_box reveal">
       <h3>Latest <span>blog posts</span></h3>
