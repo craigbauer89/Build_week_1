@@ -136,10 +136,6 @@ input#menu-btn {
     text-decoration: none;
 }
 
-.nav_link.active {
-    text-decoration: none;
-    color: #FF4F02;
-}
 
 .nav_link:after {
     content: "";
@@ -158,9 +154,12 @@ input#menu-btn {
     opacity: 1;
 }
 
-.nav_link:active:after {
+.active_scroll:after {
     display: block;
     opacity: 1;
+}
+.active_scroll {
+    text-decoration: none;
 }
 
 /* header */
@@ -366,25 +365,29 @@ a.next {
          font-weight: bold;
     }
     
+
+    #blog_background .blogbar {
+        margin: 4em 40%;
+        border-top: 1px solid white;
+}
     
-    #blog_background hr {
+/*     #blog_background hr {
     width: 11em;
     margin-bottom: 0.7em ;
     border: 0;
     height: 1px;
     background-color: #c8c1b3;
-    }
+    } */
     
     #piatti hr{
         width: 20%;
         margin: 1em auto;
-    
     }
     
     #piatti {
     /*     background-color: white;
      */  
-        margin: 5rem auto;
+        margin: 4rem auto;
         width: 100%;
         height: 45em;
         display: grid;
@@ -1182,9 +1185,59 @@ form,
     input#menu-btn:checked~nav {
         height: 18em;
     }
+    
+    /* BLOG */
+    #blog_background {
+        box-sizing: none;
+    }
+
+    #piatti {
+        box-sizing: none;
+        height: auto;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(6, 17%);
+    }
+
+    #piatti .blogpar {
+        width: 100%;
+    }
+
+    .blogbox1 img {
+        width: 100%;
+    }
+    .blogbox2 img {
+        width: 100%;
+    }   
+    .blogbox3 img {
+        width: 100%;
+    }   
+    .blogbox4 img {
+        width: 100%;
+    }
+    .blogbox5 img {
+        width: 100%;
+    }
+    .blogbox6 img {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* ____________________________ */
-}
+
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 /* carusellloooo  */
@@ -1487,6 +1540,10 @@ form,
         #piatti {
             width: 90%;
         }
+
+
+
+
 
 /*_________________MENU______________________*/
 
