@@ -174,11 +174,15 @@ input#menu-btn {
 * {
     box-sizing: border-box
 }
+.padd {
+    padding-left:4.5rem ;
+    padding-right: 4.8rem;
+}
 
 .title1 {
     margin-left:5.6rem;
     display: flex;
-    margin-right: 9rem;
+    margin-right: 8rem;
     justify-content: space-between;
     position: relative;
     font-size: 1.1rem;
@@ -187,6 +191,7 @@ input#menu-btn {
 
 .title1 h3 {
     font-size: 1.8rem;
+    
 }
 /* HOME */
 
@@ -1167,6 +1172,11 @@ display: grid;
 grid-template-columns: repeat(1, 100%);
 grid-template-rows: repeat(3, 16%);
 }
+
+.padd {
+    padding-left: 4.5rem;
+    padding-right: 4.8rem;
+}
 }
 
 
@@ -1174,6 +1184,10 @@ grid-template-rows: repeat(3, 16%);
 /* carusellloooo  */
 .imgslide {
 margin-right: -22px;
+}
+.padd {
+    padding-left: 4.5rem;
+    padding-right: 4.8rem;
 }
 
 .title1 {
@@ -1319,6 +1333,10 @@ position: relative;
 font-size: 1.1rem;
 margin-top: 0.5rem;
 }
+.padd {
+    padding-left: 4.5rem;
+    padding-right: 4.8rem;
+}
 /*  carusellooooo */
 
 /* _________burger___________ */
@@ -1400,6 +1418,10 @@ padding-right: 40px;
 .imgslide {
 margin-right: -8px;
 }
+.padd {
+    padding-left: 4.5rem;
+    padding-right: 4.8rem;
+}
 
 .title1 {
 margin-left: 4.4rem;
@@ -1433,6 +1455,10 @@ margin-left: 0.6em;
 /* carusellloooo  */
 .imgslide {
 margin-right: -8px;
+}
+.padd {
+    padding-left: 4.5rem;
+    padding-right: 4.8rem;
 }
 
 .title1 {
@@ -1619,6 +1645,10 @@ padding: 0;
 /* carusellloooo  */
 .imgslide {
 margin-right: -8px;
+}
+.padd {
+    padding-left: 4.5rem;
+    padding-right: 5rem;
 }
 
 .title1 {
@@ -1835,6 +1865,11 @@ text-align: center;
 .imgslide {
 margin-right: -8px;
 
+
+}
+.padd {
+    padding-left: 7.5rem;
+    padding-right: 8rem;
 }
 
 .title1 {
