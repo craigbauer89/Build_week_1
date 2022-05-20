@@ -55,8 +55,8 @@ function showSlides(n) {
 
   // NAV ACTIVE SCROLL
 
-  const activeNav = document.getElementsByClassName('.nav_link');
-  const sec = document.getElementsByClassName('.active_nav');
+  const activeNav = document.querySelectorAll('.nav_link_active');
+  const sec = document.querySelectorAll('.active_nav');
 
   function activeMenu(){
     let len = sec.length;
@@ -68,4 +68,4 @@ function showSlides(n) {
   activeMenu();
   window.addEventListener('scroll', activeMenu);
 
-  //____________________________________________________
+  //_________________________________________________
