@@ -136,10 +136,6 @@ input#menu-btn {
     text-decoration: none;
 }
 
-.nav_link.active {
-    text-decoration: none;
-    color: #FF4F02;
-}
 
 .nav_link:after {
     content: "";
@@ -158,9 +154,12 @@ input#menu-btn {
     opacity: 1;
 }
 
-.nav_link:active:after {
+.active_scroll:after {
     display: block;
     opacity: 1;
+}
+.active_scroll {
+    text-decoration: none;
 }
 
 /* header */
@@ -366,25 +365,29 @@ a.next {
          font-weight: bold;
     }
     
+
+    #blog_background .blogbar {
+        margin: 4em 40%;
+        border-top: 1px solid white;
+}
     
-    #blog_background hr {
+/*     #blog_background hr {
     width: 11em;
     margin-bottom: 0.7em ;
     border: 0;
     height: 1px;
     background-color: #c8c1b3;
-    }
+    } */
     
     #piatti hr{
         width: 20%;
         margin: 1em auto;
-    
     }
     
     #piatti {
     /*     background-color: white;
      */  
-        margin: 5rem auto;
+        margin: 4rem auto;
         width: 100%;
         height: 45em;
         display: grid;
@@ -799,6 +802,14 @@ a.next {
     border-top: 1px solid white;
 }
 
+.hor_line {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-top: 1px solid black;
+}
+
 .newsletter_inner h2 {
     line-height: 1;
     margin: 7.5%;
@@ -855,7 +866,49 @@ a.next {
 
 .footer {
     width: 100%;
-    padding: 90px;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.container_contact span {
+    text-transform: uppercase;
+}
+
+.footer p {
+    font-size: 0.95rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.box_contact, 
+.blog_box {
+    padding-bottom: 60px;
+}
+
+.box_info i  {
+    font-size: smaller;
+
+}
+
+#sign_up {
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.blog_box h4 {
+     font-weight: 600;
+     font-size: 1.25rem;
+}
+
+.box_media {
+    padding-bottom: 25px;
+}
+
+.box_media ul li {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
 }
 
 .footer h3,
@@ -905,7 +958,7 @@ footer {
     padding-top: 18px;
     text-decoration: none;
     border: none;
-    margin-left: 2px;
+
 }
 
 .box_blog {
@@ -916,10 +969,19 @@ footer {
 form,
 .form_group,
 #input_name,
-#input_email,
-#input_message {
+#input_email {
     margin-bottom: 0.95rem;
 }
+
+#input_message {
+    height: 200px;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
 
 .block_form h2 {
     padding: 2.5rem;
@@ -973,7 +1035,6 @@ form,
 
 .border_f {
     background-color: #a7a5a5;
-    padding: 20px;
     color: #ffffff;
     font-size: 15px !important;
     display: block;
@@ -985,6 +1046,23 @@ form,
     background: #B0B0B0;
     color: #FFFFFF;
     transition: .3s all;
+}
+
+.info_box h4 {
+    color: #FF4F02;
+}
+
+
+
+.footer h3 {
+    color: #2E2E2E;
+    padding-bottom: 25px;
+    text-align: left;
+    text-transform: uppercase; 
+}
+
+.footer .border_f:hover {
+    background-color: #FF4F02;
 }
 
 .footer .box_media .border_f ul li a:hover {
@@ -1046,7 +1124,6 @@ form,
                 font-size: 2rem;
            } 
 }
-
 /* BLOG */
 
 
@@ -1108,9 +1185,62 @@ form,
     input#menu-btn:checked~nav {
         height: 18em;
     }
+    
+    /* BLOG */
+    #blog_background {
+        box-sizing: none;
+    }
+
+    #piatti {
+        box-sizing: none;
+        height: auto;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(6, 17%);
+    }
+
+    #piatti .blogpar {
+        width: 100%;
+    }
+    #piatti .blogpar p{
+    text-align: center;
+    }
+
+    .blogbox1 img {
+        width: 100%;
+    }
+    .blogbox2 img {
+        width: 100%;
+    }   
+    .blogbox3 img {
+        width: 100%;
+    }   
+    .blogbox4 img {
+        width: 100%;
+    }
+    .blogbox5 img {
+        width: 100%;
+    }
+    .blogbox6 img {
+        width: 100%;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
 
     /* ____________________________ */
-}
+
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 /* carusellloooo  */
@@ -1155,6 +1285,18 @@ form,
     }
 
     /* __________________________ */
+
+    .box_info {
+        display: flex;
+    
+    }
+    .info_box {
+        padding-right: 40px;
+    
+    
+    }
+    
+    
 
 }
 
@@ -1402,6 +1544,10 @@ form,
             width: 90%;
         }
 
+
+
+
+
 /*_________________MENU______________________*/
 
 
@@ -1556,7 +1702,6 @@ form,
         display: flex;
         padding: 3%;
         padding-top: 4%;
-        padding-bottom: 10%;
         justify-content: space-evenly;
     }
 
@@ -1572,8 +1717,10 @@ form,
     .box_media .gallery ul {
         display: inline-block;
         margin: 1.3rem;
+        font-size: 50px;
 
     }
+
 
     .border_f {
         display: inline;
@@ -1629,7 +1776,6 @@ form,
 /*  .block_contact ul {
     list-style: none;
 }
-
 .block_contact {
     display: flex;
     width: 100%;
@@ -1641,24 +1787,19 @@ form,
     margin: 1.3rem;
     padding: 4px;
     width: 30%;
-
 }
 .box_blog {
     text-align: left;
      margin: 1.3rem;
     padding: 4px;
     width: 30%;
-
 }
-
 ul#lista1 li {
     display: inline;
     float: left;
     list-style: none;
     padding: 0 2px;
     }
-
-
 .box_media .gallery ul  {
     display: inline-block;
     
