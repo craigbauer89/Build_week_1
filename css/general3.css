@@ -453,7 +453,6 @@ a.next {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-left: -15px;
 }
 
 /* .blogbox2 .square {
@@ -500,7 +499,6 @@ a.next {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-left: -15px;
 }
 
 .blogbox3 {
@@ -537,7 +535,6 @@ a.next {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-left: -15px;
 }
 
 .blogbox4 {
@@ -575,7 +572,6 @@ a.next {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-right: -15px;
 
 }
 
@@ -614,7 +610,6 @@ a.next {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-right: -25px;
 
 }
 
@@ -653,7 +648,6 @@ vertical-align: middle;
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-left: -15px;
 }
 
 div .blogbutton {
@@ -1276,7 +1270,7 @@ height: 18em;
 
     div .blogbutton{
         width: 30%;
-        margin-left: 7%;
+        margin-left: 65%;
     }
 
     footer {
@@ -1373,7 +1367,7 @@ padding-right: 40px;
 
     div .blogbutton {
         width: 30%;
-        margin-left: 40%;
+        margin-left: 35%;
     }
 
 
