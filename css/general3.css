@@ -1181,6 +1181,9 @@ form,
     #piatti .blogpar {
         width: 100%;
     }
+    #piatti .blogpar p{
+    text-align: center;
+    }
 
     .blogbox1 img {
         width: 100%;
@@ -1206,7 +1209,7 @@ form,
 
 
 
-
+}
 
 
 
