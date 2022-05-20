@@ -859,8 +859,23 @@ a.next {
     padding-bottom: 0;
 }
 
-.box_contact, .blog_box {
+.footer p {
+    font-size: 0.95rem;
+}
+
+.box_contact, 
+.blog_box {
     padding-bottom: 60px;
+}
+
+.blog_box p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.blog_box h4 {
+     font-weight: 600;
+     font-size: 1.25rem;
 }
 
 .box_media {
@@ -918,7 +933,7 @@ footer {
     padding-top: 18px;
     text-decoration: none;
     border: none;
-    margin-left: 2px;
+
 }
 
 .box_blog {
@@ -929,10 +944,19 @@ footer {
 form,
 .form_group,
 #input_name,
-#input_email,
-#input_message {
+#input_email {
     margin-bottom: 0.95rem;
 }
+
+#input_message {
+    height: 200px;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
 
 .block_form h2 {
     padding: 2.5rem;
