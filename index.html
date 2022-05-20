@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="css/styleH.css" /> -->
+    
     <link rel="stylesheet" href="fonts/fontawesome-webfont.svg" />
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    
     <link rel="stylesheet" href="css/general3.css">
+    
        
     <link rel="stylesheet" href="fonts/ufonts.com_tw-cen-mt.ttf">        
     <script src="https://kit.fontawesome.com/e57aa09383.js" crossorigin="anonymous"></script>    
@@ -29,20 +31,20 @@
         <label for="menu-btn"><i class="lni lni-menu"></i></label>
         <input type="checkbox" name="menu-btn" id="menu-btn" />
         <nav>
-          <a class="nav_link nav_link_active" href="#home">Home</a>
-          <a class="nav_link nav_link_active" href="#about_us">About us</a>
-          <a class="nav_link nav_link_active" href="#blog_background">Blog</a>
-          <a class="nav_link nav_link_active" href="#menu">Menu</a>
-          <a class="nav_link nav_link_active" href="#news">News</a>
-          <a class="nav_link nav_link_active" href="#contacts">Contacts</a>
+          <a class="nav_link" href="#home">Home</a>
+          <a class="nav_link" href="#about_us">About us</a>
+          <a class="nav_link" href="#blog_background">Blog</a>
+          <a class="nav_link" href="#menu">Menu</a>
+          <a class="nav_link" href="#news">News</a>
+          <a class="nav_link" href="#contacts">Contacts</a>
         </nav>
         </div>
       
 
-<div class="reveal active active_nav">
+<div class="reveal active">
   <div class="slides_container" id="home" class="reveal"></div>
   <div class="title1">
-    <h3 class="title1">Featured <span>Works</span></h3><!-- Next  --><a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <h3 class="title1">FEATURED <span>WORKS</span></h3><!-- Next  --><a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   
   <div class="mySlides fade reveal">
@@ -89,7 +91,7 @@
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
     <!-- ABOUT US -->
-    <section id="about_us" class="active_nav">
+    <section id="about_us">
       <div class="container">
         <img src="images/cooker-img.png" alt="Chef" />
         <h2>
@@ -109,12 +111,9 @@
     <!-- slider close -->
 
      <!-- Blog -->
-    <div id="blog_background" class="active_nav">
+    <div id="blog_background">
       <h2>Latest <span>From</span> the <span>Blog</span></h2>
-<!--       <hr>
- -->     
-     <div class="blogbar">
-      </div>
+      <hr>
       <section id="piatti" class="reveal">
         <div class="blogbox1">
           <div class="blogimmagine">
@@ -187,7 +186,7 @@
     </div>
 
      <!-- MENU-->
-    <div class="menu active_nav" id="menu">
+    <div class="menu" id="menu">
       <div class="reveal">
         <h1>our <span>MENU</span> the <span>PRICE</span></h1>
       </div>
@@ -299,7 +298,7 @@
 
      <!-- Subscribe-->
     </div>
-    <div class="newsletter_margin active_nav"></div>
+    <div class="newsletter_margin"></div>
       <div class="newsletter ">
         <div class="newsletter_inner ">
           <div class="reveal">
@@ -324,12 +323,12 @@
 
      <!-- Contact -->
     <main>
-      <section class="contact_us reveal active_nav" id="contacts">
+      <section class="contact_us reveal" id="contacts">
         <div class="container_contact reveal">
           <h2>Our <span>Contact Us</span></h2>
           <div class="hor_line reveal">
           </div>
-          <h3 id="sign_up">Sign up for <span>Email alerts</span></h3>
+          <h3>Sign up for <span>Email alerts</span></h3>
           <form>
             <div class="form_group reveal">
               <input type="name" id="input_name" placeholder="write your full name here...">
@@ -338,11 +337,10 @@
               <input type="email" id="input_email" placeholder="write your email address here...">
             </div>
             <div class="form_group reveal">
-              <textarea type="text" id="input_message" placeholder="write your message here..."></textarea>
-            </div> 
-            <button id="button_container" onclick="topFunction()">Send your message</a></button>
+              <textarea id="input_message" placeholder="write your message here..."></textarea>
+            </div>
           </form>
-          
+          <button id="button_container" onclick="topFunction()">Send your message</a></button>
         </div>
       </section>
     </main>
