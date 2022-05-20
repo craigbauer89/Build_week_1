@@ -802,6 +802,14 @@ a.next {
     border-top: 1px solid white;
 }
 
+.hor_line {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-top: 1px solid black;
+}
+
 .newsletter_inner h2 {
     line-height: 1;
     margin: 7.5%;
@@ -862,8 +870,14 @@ a.next {
     padding-bottom: 0;
 }
 
+.container_contact span {
+    text-transform: uppercase;
+}
+
 .footer p {
     font-size: 0.95rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .box_contact, 
@@ -871,7 +885,13 @@ a.next {
     padding-bottom: 60px;
 }
 
-.blog_box p {
+.box_info i  {
+    font-size: smaller;
+
+}
+
+#sign_up {
+    text-align: left;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -1697,6 +1717,7 @@ form,
     .box_media .gallery ul {
         display: inline-block;
         margin: 1.3rem;
+        font-size: 50px;
 
     }
 
