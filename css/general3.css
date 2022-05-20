@@ -883,7 +883,9 @@ a.next {
 }
 
 .box_media ul li {
-    padding: 30px 0;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
 }
 
 .footer h3,
@@ -1637,6 +1639,7 @@ form,
         margin: 1.3rem;
 
     }
+
 
     .border_f {
         display: inline;
