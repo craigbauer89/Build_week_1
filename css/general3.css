@@ -950,12 +950,16 @@ footer {
     background-color: #E9E9E9;
     padding: 20px 0;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
         list-style: none;
     list-style: none;
     
 } /*pre-push claudio*/
+
+footer p {
+    font-weight: 600;
+}
 
 footer a {
     text-decoration: none;
@@ -971,10 +975,17 @@ footer a {
     padding: 2rem;
 }
 
+.contact_us h3 {
+    color: #2E2E2E;
+    padding-bottom: 30px;
+    text-align: left;
+    text-transform: uppercase; 
+}
+
 #button_container {
     padding: 20px 80px;
-    width: 100%;
     background: #FF4F02;
+    width: 100%;
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
@@ -984,6 +995,8 @@ footer a {
     border: none;
 
 }
+
+
 
 .box_blog {
     width: 30%;
@@ -1024,14 +1037,9 @@ form,
 #input_email,
 #input_message {
     width: 100%;
-    padding: 0.375rem;
+    padding: 1rem;
 }
 
-#button_contact a {
-    color: #fff;
-    text-decoration: none;
-    width: 100%;
-}
 
 #button_contact {
     background: #FF4F02;
@@ -1040,14 +1048,14 @@ form,
     font-weight: 500;
     text-transform: uppercase;
     display: inline-block;
+    vertical-align: middle;
+    touch-action: manipulation;
     margin-bottom: 0;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.42857143;
     text-align: center;
     white-space: nowrap;
-    vertical-align: middle;
-    touch-action: manipulation;
     cursor: pointer;
     user-select: none;
 }
@@ -1084,7 +1092,7 @@ form,
 
 .footer h3 {
     color: #2E2E2E;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     text-align: left;
     text-transform: uppercase; 
 }
@@ -1155,12 +1163,15 @@ font-size: 2rem;
 
 /* #region  RESPONSIVE*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-#piatti {
-width: 90%;
-display: grid;
-grid-template-columns: repeat(1, 100%);
-grid-template-rows: repeat(3, 16%);
-}
+    #piatti {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(3, 16%);
+    }
+  
+    
+
 }
 
 
@@ -1283,6 +1294,7 @@ height: 18em;
 
     
     
+    
 
 }
 
@@ -1385,9 +1397,11 @@ padding-right: 40px;
     
     }
     
+
     
 
 }
+
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 /* carusellloooo  */
@@ -1826,6 +1840,12 @@ text-align: center;
         margin-top: 0.8rem;
         font-size: 0.3;
         text-align: left;
+    }
+
+    #button_container {
+        width: 510px;
+        float: right;
+
     }
 }
 
