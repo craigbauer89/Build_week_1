@@ -1165,9 +1165,59 @@ form,
     input#menu-btn:checked~nav {
         height: 18em;
     }
+    
+    /* BLOG */
+    #blog_background {
+        box-sizing: none;
+    }
+
+    #piatti {
+        box-sizing: none;
+        height: auto;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(6, 17%);
+    }
+
+    #piatti .blogpar {
+        width: 100%;
+    }
+
+    .blogbox1 img {
+        width: 100%;
+    }
+    .blogbox2 img {
+        width: 100%;
+    }   
+    .blogbox3 img {
+        width: 100%;
+    }   
+    .blogbox4 img {
+        width: 100%;
+    }
+    .blogbox5 img {
+        width: 100%;
+    }
+    .blogbox6 img {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* ____________________________ */
-}
+
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 /* carusellloooo  */
