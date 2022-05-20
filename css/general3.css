@@ -379,7 +379,7 @@ a.next {
 
 #blog_background .blogbar {
     margin: 4em 40%;
-    border-top: 1px solid white;
+    border-top: 1px solid grey;
 }
 
 /*     #blog_background hr {
@@ -458,7 +458,6 @@ a.next {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-left: -15px;
 }
 
 /* .blogbox2 .square {
@@ -505,7 +504,6 @@ a.next {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-left: -15px;
 }
 
 .blogbox3 {
@@ -542,7 +540,6 @@ a.next {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-left: -15px;
 }
 
 .blogbox4 {
@@ -580,7 +577,6 @@ a.next {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-right: -15px;
 
 }
 
@@ -619,7 +615,6 @@ a.next {
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-right: -25px;
 
 }
 
@@ -658,7 +653,6 @@ vertical-align: middle;
     box-sizing: border-box;
     overflow: hidden;
     z-index: 0;
-    margin-left: -15px;
 }
 
 div .blogbutton {
@@ -961,12 +955,16 @@ footer {
     background-color: #E9E9E9;
     padding: 20px 0;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
         list-style: none;
     list-style: none;
     
 } /*pre-push claudio*/
+
+footer p {
+    font-weight: 600;
+}
 
 footer a {
     text-decoration: none;
@@ -982,10 +980,17 @@ footer a {
     padding: 2rem;
 }
 
+.contact_us h3 {
+    color: #2E2E2E;
+    padding-bottom: 30px;
+    text-align: left;
+    text-transform: uppercase; 
+}
+
 #button_container {
     padding: 20px 80px;
-    width: 100%;
     background: #FF4F02;
+    width: 100%;
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
@@ -995,6 +1000,8 @@ footer a {
     border: none;
 
 }
+
+
 
 .box_blog {
     width: 30%;
@@ -1035,14 +1042,9 @@ form,
 #input_email,
 #input_message {
     width: 100%;
-    padding: 0.375rem;
+    padding: 1rem;
 }
 
-#button_contact a {
-    color: #fff;
-    text-decoration: none;
-    width: 100%;
-}
 
 #button_contact {
     background: #FF4F02;
@@ -1051,14 +1053,14 @@ form,
     font-weight: 500;
     text-transform: uppercase;
     display: inline-block;
+    vertical-align: middle;
+    touch-action: manipulation;
     margin-bottom: 0;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.42857143;
     text-align: center;
     white-space: nowrap;
-    vertical-align: middle;
-    touch-action: manipulation;
     cursor: pointer;
     user-select: none;
 }
@@ -1095,7 +1097,7 @@ form,
 
 .footer h3 {
     color: #2E2E2E;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     text-align: left;
     text-transform: uppercase; 
 }
@@ -1290,7 +1292,7 @@ height: 18em;
 
     div .blogbutton{
         width: 30%;
-        margin-left: 7%;
+        margin-left: 65%;
     }
 
     footer {
@@ -1301,6 +1303,7 @@ height: 18em;
         text-align: center;
     } /*pre claudio*/
 
+    
     
     
 
@@ -1391,7 +1394,7 @@ padding-right: 40px;
 
     div .blogbutton {
         width: 30%;
-        margin-left: 40%;
+        margin-left: 35%;
     }
 
 
@@ -1409,9 +1412,11 @@ padding-right: 40px;
     
     }
     
+
     
 
 }
+
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 /* carusellloooo  */
@@ -1669,6 +1674,11 @@ margin-top: 0.5rem;
 width: 90%;
 }
 
+div .blogbutton{
+width: 42%;
+padding: 1rem 3rem;
+
+}
 
 
 
@@ -1857,6 +1867,12 @@ text-align: center;
         margin-top: 0.8rem;
         font-size: 0.3;
         text-align: left;
+    }
+
+    #button_container {
+        width: 510px;
+        float: right;
+
     }
 }
 
